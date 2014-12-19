@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="http://ita-portal.cis.fiu.edu/moodle/theme/standard/styles.php">
+<link rel="stylesheet" type="text/css" href="http://ita-portal.cis.fiu.edu/moodle/theme/standardblue/styles.php">
+
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="http://ita-portal.cis.fiu.edu/moodle/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://ita-portal.cis.fiu.edu/moodle/theme/standard/styles_ie6.css" />
+<![endif]-->
+
+
+    <meta name="keywords" content="moodle, ITA Portal: Scheduler ">
+    <title>ITA Portal: Scheduler</title>
+    <link rel="shortcut icon" href="http://ita-portal.cis.fiu.edu/moodle/theme/standardblue/favicon.ico">
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(http://ita-portal.cis.fiu.edu/moodle/lib/csshover.htc);} /*]]>*/</style>-->
+
+
+
+</head>
+
+<body>
+
+<link rel="stylesheet" type="text/css" href="fullcalendar/css/jquery.ptTimeSelect.css">
+<link rel="stylesheet" type="text/css" href="fullcalendar/css/custom-theme/jquery-ui-1.8.1.custom.css">
+
+
+
+<style type="text/css">
+
+	body {
+		margin-top: 40px;
+		<!--text-align: center;-->
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+		
+	#host_calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+
+	/* -- Set here for design purposes. -- */
+	/* Accordion ----------------------------------*/
+	.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+	.ui-accordion .ui-accordion-li-fix { display: inline; }
+	.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+	.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; color:#ffffff;}
+	/* IE7-/Win - Fix extra vertical space in lists */
+	.ui-accordion a { zoom: 1; }
+	.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+	.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+	.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+	.ui-accordion .ui-accordion-content-active { display: block; }
+
+/* actions icons */
+
+	
+	.ui-accordion .ui-accordion-content-active .actions-edit{
+		float: right;
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin: 5px;
+		background-image: url(fullcalendar/images/list_edit_25px.png);
+		cursor: pointer;
+	} 
+	.ui-accordion .ui-accordion-content-active .actions-cancel {
+		float: right;
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin: 5px;
+		background-image: url(fullcalendar/images/list_delete_25px.png);
+		cursor: pointer;
+	} 
+	.ui-accordion .ui-accordion-content-active .actions-confirm {
+		float: right;
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin: 5px;
+		background-image: url(fullcalendar/images/list_confirm_25px.png);
+		cursor: pointer;
+	} 
+	.ui-accordion .ui-accordion-content-active .actions-info {
+		float: right;
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin: 5px;
+		background-image: url(fullcalendar/images/list_info_25px.png);
+		cursor: pointer;
+	} 
+	
+	.ui-progressbar-value { 
+		background-image: url(fullcalendar/images/pbar-ani.gif);
+	}
+
+	
+/* selected day */
+	.fc-state-selected {
+		background-color: #BBD9EE;	 /*#9CB6D6;*/
+	}
+	.fc-state-selected-today {
+		background-color: #FFCC66;
+	}
+	
+/* right-click menu */
+
+   .vmenu{border:1px solid #aaa;position:absolute;background:#fff;	display:none;font-size:0.75em;}
+	   .vmenu .first_li span{width:100px;display:block;padding:5px 10px;cursor:pointer}
+	   .vmenu .inner_li{display:none;margin-left:120px;position:absolute;border:1px solid #aaa;
+		border-left:1px solid #ccc;margin-top:-28px;background:#fff;}
+	   .vmenu .sep_li{border-top: 1px ridge #aaa;margin:5px 0}
+	   .vmenu .fill_title{font-size:11px;font-weight:bold;/height:15px;/overflow:hidden;word-wrap:break-word;}
+	   .context-label { text-transform: capitalize; }
+
+/* filter Options menu */
+
+    #filters { display: inline-block; }
+    .mixed-state { cursor: pointer; opacity:0.3; filter:alpha(opacity=30); }
+	
+	#tabs { min-width: 930px; }
+	#progressbarContainer {
+		width: 300px;
+		z-index: 5001;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+	
+.dropDown_wrapper {
+	text-align: center;
+}
+
+#filters_pane {
+	display:inline-block;
+	margin: 0 auto;
+}
+
+#filters_pane td {
+	text-align:left;
+}
+
+#options_pane {
+	
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: inline-block;
+	margin: 0 auto;
+	
+}
+
+#options_pane  td, #options_pane  th {
+	text-align: left;
+}
+
+#timezones, #tabs-1 {
+	text-align: center;
+	/*text-align: left;*/
+}
+
+#timezones select {
+    width: 200px;
+	z-index: 1;
+	position:relative;
+}
+	
+/* Calendar CSS */
+
+/*
+	div.available {opacity:0.4; filter:alpha(opacity=40); color: #333333;}
+	div.available-accordion h3 a {opacity:0.4; filter:alpha(opacity=40);}
+	div.scheduled-accordion h3 a {opacity:0.9; filter:alpha(opacity=90);}
+*/
+
+
+	div.available {opacity:0.5; color: #333333; filter:alpha(opacity=50);}
+	div.available-accordion h3 a {opacity:0.5; filter:alpha(opacity=50);}
+	div.scheduled-accordion h3 a {opacity:0.9; filter:alpha(opacity=90);}
+
+
+	div .available-accordion h3 a:visited {color:#ffffff;}
+	div .available-accordion h3 a:hover {font-weight:bold;}
+
+	
+	div .scheduled-accordion h3 a:visited {color:#ffffff;}
+	div .scheduled-accordion h3 a:hover {font-weight:bold;}
+	
+</style>
+
+
+<style type="text/css" id="dynamic_css">div .divcertificate-kaseya-1 a {background-color: #A00000; color:#FFFFFF}
+.fc-agenda div .divcertificate-kaseya-1 .fc-event-time {border-color: #A00000; background-color: #A00000;}
+.fc-agenda div .divcertificate-kaseya-1 .fc-event-actions {border-color: #A00000; background-color: #A00000;}
+td.divcertificate-kaseya-1 {border-color: #A00000; background-color: #A00000;}
+div .divmentoring-kaseya-1 a {background-color: #0066CC; color:#FFFFFF}
+.fc-agenda div .divmentoring-kaseya-1 .fc-event-time {border-color: #0066CC; background-color: #0066CC;}
+.fc-agenda div .divmentoring-kaseya-1 .fc-event-actions {border-color: #0066CC; background-color: #0066CC;}
+td.divmentoring-kaseya-1 {border-color: #0066CC; background-color: #0066CC;}
+div .divvirtual-lab-kaseya-1 a {background-color: #00CC66; color:#FFFFFF}
+.fc-agenda div .divvirtual-lab-kaseya-1 .fc-event-time {border-color: #00CC66; background-color: #00CC66;}
+.fc-agenda div .divvirtual-lab-kaseya-1 .fc-event-actions {border-color: #00CC66; background-color: #00CC66;}
+td.divvirtual-lab-kaseya-1 {border-color: #00CC66; background-color: #00CC66;}
+div .divcertificate-kaseya-2 a {background-color: #FF9933; color:#FFFFFF}
+.fc-agenda div .divcertificate-kaseya-2 .fc-event-time {border-color: #FF9933; background-color: #FF9933;}
+.fc-agenda div .divcertificate-kaseya-2 .fc-event-actions {border-color: #FF9933; background-color: #FF9933;}
+td.divcertificate-kaseya-2 {border-color: #FF9933; background-color: #FF9933;}
+div .divmentoring-kaseya-2 a {background-color: #990099; color:#FFFFFF}
+.fc-agenda div .divmentoring-kaseya-2 .fc-event-time {border-color: #990099; background-color: #990099;}
+.fc-agenda div .divmentoring-kaseya-2 .fc-event-actions {border-color: #990099; background-color: #990099;}
+td.divmentoring-kaseya-2 {border-color: #990099; background-color: #990099;}
+div .divvirtual-lab-kaseya-2 a {background-color: #cc9900; color:#FFFFFF}
+.fc-agenda div .divvirtual-lab-kaseya-2 .fc-event-time {border-color: #cc9900; background-color: #cc9900;}
+.fc-agenda div .divvirtual-lab-kaseya-2 .fc-event-actions {border-color: #cc9900; background-color: #cc9900;}
+td.divvirtual-lab-kaseya-2 {border-color: #cc9900; background-color: #cc9900;}
+div .divcertificate-kaseya-2-–-basic-core-modules a {background-color: #ff3399; color:#FFFFFF}
+.fc-agenda div .divcertificate-kaseya-2-–-basic-core-modules .fc-event-time {border-color: #ff3399; background-color: #ff3399;}
+.fc-agenda div .divcertificate-kaseya-2-–-basic-core-modules .fc-event-actions {border-color: #ff3399; background-color: #ff3399;}
+td.divcertificate-kaseya-2-–-basic-core-modules {border-color: #ff3399; background-color: #ff3399;}
+div .divmentoring-kaseya-2-–-basic-core-modules a {background-color: #999999; color:#FFFFFF}
+.fc-agenda div .divmentoring-kaseya-2-–-basic-core-modules .fc-event-time {border-color: #999999; background-color: #999999;}
+.fc-agenda div .divmentoring-kaseya-2-–-basic-core-modules .fc-event-actions {border-color: #999999; background-color: #999999;}
+td.divmentoring-kaseya-2-–-basic-core-modules {border-color: #999999; background-color: #999999;}
+div .divvirtual-lab-kaseya-2-–-basic-core-modules a {background-color: #663300; color:#FFFFFF}
+.fc-agenda div .divvirtual-lab-kaseya-2-–-basic-core-modules .fc-event-time {border-color: #663300; background-color: #663300;}
+.fc-agenda div .divvirtual-lab-kaseya-2-–-basic-core-modules .fc-event-actions {border-color: #663300; background-color: #663300;}
+td.divvirtual-lab-kaseya-2-–-basic-core-modules {border-color: #663300; background-color: #663300;}
+</style>
+
+
+
+<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <ul id="tabs-labels" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+            <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-1">Calendar</a></li>
+        </ul>
+        <div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <div id="timezones"><label>Timezone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label></div>
+            <br>	
+            <div id="users"></div>
+            <br>	
+            <div id="filters">
+            	<div id="topResource_dropDown_wrapper" class="dropDown_wrapper container_24">
+                <div class="filters" id="filters_pane">
+            		<table><tr><td>
+                    	<input type="checkbox" checked="checked" name="filter" class="checkbox" id="scheduled"><label>Scheduled Tasks</label>
+                    </td></tr>
+                    <tr><td>
+                    	<input type="checkbox" checked="checked" name="filter" class="checkbox" id="available"><label>Available Time Slots</label>
+                    </td></tr></table>
+            	</div>
+            	<div class="clear"></div>
+            	<div id="options_pane"><form id="form-options"><table cellspacing="5" cellpadding="5" border="1" id="table-options" style="border: 2px solid rgb(68, 68, 68); border-collapse: collapse;"><thead><tr><th><input type="checkbox" id="courses" name="courses" value="9" class="checkbox">COURSES</th><th colspan="3"><input type="checkbox" id="certificate" name="certificate" value="3" class="types checkbox" title="Click to Select All">CERTIFICATE</th><th colspan="3"><input type="checkbox" id="mentoring" name="mentoring" value="3" class="types checkbox" title="Click to Select All">MENTORING</th><th colspan="3"><input type="checkbox" id="virtual-lab" name="virtual-lab" value="3" class="types checkbox" title="Click to Select All">VIRTUAL LAB</th></tr></thead><tbody><tr><td><input type="checkbox" id="course-0" name="course-0" value="3" class="course-item kaseya-1 checkbox">Kaseya 1</td><td width="25px"><input type="checkbox" id="kaseya-1-certificate" name="kaseya-1" value="kaseya-1-certificate" class="certificate checkbox"></td><td class="divcertificate-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divcertificate-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-1-mentoring" name="kaseya-1" value="kaseya-1-mentoring" class="mentoring checkbox"></td><td class="divmentoring-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divmentoring-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-1-virtual-lab" name="kaseya-1" value="kaseya-1-virtual-lab" class="virtual-lab checkbox"></td><td class="divvirtual-lab-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divvirtual-lab-kaseya-1"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td></tr><tr><td><input type="checkbox" id="course-1" name="course-1" value="3" class="course-item kaseya-2 checkbox">Kaseya 2</td><td width="25px"><input type="checkbox" id="kaseya-2-certificate" name="kaseya-2" value="kaseya-2-certificate" class="certificate checkbox"></td><td class="divcertificate-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divcertificate-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-2-mentoring" name="kaseya-2" value="kaseya-2-mentoring" class="mentoring checkbox"></td><td class="divmentoring-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divmentoring-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-2-virtual-lab" name="kaseya-2" value="kaseya-2-virtual-lab" class="virtual-lab checkbox"></td><td class="divvirtual-lab-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divvirtual-lab-kaseya-2"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td></tr><tr><td><input type="checkbox" id="course-2" name="course-2" value="3" class="course-item kaseya-2-&ndash;-basic-core-modules checkbox">Kaseya 2 &ndash; Basic Core Modules</td><td width="25px"><input type="checkbox" id="kaseya-2-&ndash;-basic-core-modules-certificate" name="kaseya-2-&ndash;-basic-core-modules" value="kaseya-2-&ndash;-basic-core-modules-certificate" class="certificate checkbox"></td><td class="divcertificate-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divcertificate-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-2-&ndash;-basic-core-modules-mentoring" name="kaseya-2-&ndash;-basic-core-modules" value="kaseya-2-&ndash;-basic-core-modules-mentoring" class="mentoring checkbox"></td><td class="divmentoring-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divmentoring-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td><td width="25px"><input type="checkbox" id="kaseya-2-&ndash;-basic-core-modules-virtual-lab" name="kaseya-2-&ndash;-basic-core-modules" value="kaseya-2-&ndash;-basic-core-modules-virtual-lab" class="virtual-lab checkbox"></td><td class="divvirtual-lab-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Sched</span></td><td style="opacity: 0.5;" class="divvirtual-lab-kaseya-2-&ndash;-basic-core-modules"><span style="color: rgb(255, 255, 255); font-size: 10px;">Avail</span></td></tr></tbody></table></form></div></div><div class="clear"></div><a id="filterOptions_TopResources" href="#filterOptions"><span class="toolbar_title">Filter Options</span></a><br><br></div>
+    
+            <div id="calendar" class="fc">
+              <div style="position: relative; min-height: 1px;" class="fc-content fc-widget-content"><div style="position: relative; -moz-user-select: none; display: none;" class="fc-view fc-view-agendaList fc-grid" unselectable="on"><table><thead><tr><th class="fc-wed fc-state-default fc-leftmost" id="listheader">1 to 31</th></tr></thead><tbody><tr class="fc-agendaList-row"><td class="fc-agendaList-col" style="height: 650px;"><div class="fc-agendaList-content"><div style="border: 1px solid rgb(204, 204, 204); min-height: 500px;" id="accordion" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons" role="tablist"></div></div></td></tr></tbody></table></div><div style="position: relative; -moz-user-select: none;" class="fc-view fc-view-agendaDay fc-agenda" unselectable="on"></div>
+            </div></div>
+    
+        </div>	
+    </div>
+
+</body>
+</html>

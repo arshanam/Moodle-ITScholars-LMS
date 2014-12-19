@@ -1,0 +1,81 @@
+<form id="ve_scheduler_form">
+    <table border="0" cellpadding="5" cellspacing="5">
+        <tr>
+            <td><label for="timezone">Time Zone:</label></td>
+            <td>
+                <select name="timezone" id="timezone" style="width:200px;" tabindex="6">
+                </select>
+            </td>
+        </tr>
+    </table>
+   
+   <h3>Administrator Configuration:</h3>
+    <table border="0" cellpadding="5" cellspacing="5">
+    
+        <tr>
+        
+            <td><label for="startDate_admin">Start Date:</label></td>
+            <td><input type="text" name="startDate_admin" id="startDate_admin" value="" class="text ui-widget-content ui-corner-all" /></td>
+        </tr>
+        <tr>
+            <td><label for="start_admin">Start Time:</label></td>
+            <td><input type="text" name="start_admin" id="start_admin" value="" class="text ui-widget-content ui-corner-all" /></td>
+        </tr>
+        <tr>
+            <td><label for="endDate_admin">End Date:</label></td>
+            <td><input type="text" name="endDate_admin" id="endDate_admin" value="" class="text ui-widget-content ui-corner-all" /></td>
+        </tr>
+        <tr>
+            <td><label for="end_admin">End Time:</label></td>
+            <td><input type="text" name="end_admin" id="end_admin" value="" class="text ui-widget-content ui-corner-all" /><span id="nextday"></span></td>
+        </tr>
+        <!--
+		<tr>
+            <td><label for="timezone_admin">Time Zone:</label></td>
+            <td>
+                <select name="timezone_admin" id="timezone_admin" style="width:200px;" tabindex="6">
+                </select>
+            </td>
+        </tr>
+        -->
+    </table>
+    
+    <h3>User Configuration:</h3>
+     <table border="0" cellpadding="5" cellspacing="5">
+	
+		<tr>
+			<td><label for="startDate_user">Start Date:</label></td>
+			<td><input type="text" name="startDate_user" id="startDate_user" value="" class="text ui-widget-content ui-corner-all" /></td>
+		</tr>
+		<tr>
+			<td><label for="start_user">Start Time:</label></td>
+			<td><input type="text" name="start_user" id="start_user" value="" class="text ui-widget-content ui-corner-all" /></td>
+		</tr>
+		<tr>
+			<td><label for="endDate_user">End Date:</label></td>
+			<td><input type="text" name="endDate_user" id="endDate_user" value="" class="text ui-widget-content ui-corner-all" /></td>
+		</tr>
+		<tr>
+			<td><label for="end_user">End Time:</label></td>
+			<td><input type="text" name="end_user" id="end_user" value="" class="text ui-widget-content ui-corner-all" /><span id="nextday"></span></td>
+		</tr>
+        <!--
+        <tr>
+            <td><label for="timezone_user">Time Zone:</label></td>
+            <td>
+                <select name="timezone_user" id="timezone_user" style="width:200px;" tabindex="6">
+                </select>
+            </td>
+        </tr>
+        -->
+	<table/>
+        
+
+  <br />  
+    
+    <input type="button" id="ve_configuration_save" value="Save Changes">
+
+    
+    
+</form>
+

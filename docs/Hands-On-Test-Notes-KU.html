@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<p class="label"><span style="font-weight: bold; color: rgb(255, 0, 0);">Important Notes! Please read all the notes below from the beginning to the end (at least twice) before you start the hands-on part of your certificate exam! Once you start an attempt, the clock will be ticking and the attempt cannot be cancelled!</span>
+</p>
+<p style="text-align: justify;"><b>General notes:</b></p>
+<ul>
+  <li>The hands-on part of your certificate exam can be taken at any time while your subscription is valid. </li>
+  <li>This part comprises <strong>70% </strong>of the total grade for your certificate exam.</li>
+  <li><!-- You have a total of three attempts. You can choose to use up to two of these attempts for preparation. Only one attempt would be graded and that is the one for which you will submit your answer file for grading. -->You have one attempt at the hands-on exam.  Once the exam is completed, submit the answer file for grading.</li>
+  <li><!-- Each attempt provides you with <strong>18 randomly chosen questions </strong>from 10 major topics in your training. There will be one randomly selected <em>extra credit</em> question from the topics that may not be fully covered in your training. Note that the extra credit question is optional and can be ignored without loosing any points.-->The exam provides you with a number of randomly chosen questions from all major topics in your training. <!-- There will be one randomly selected extra credit question from the topics that may not be fully covered in your training. Note that the extra credit question is optional and can be ignored without loosing any points. --><br />
+  </li>
+  <li>You have only <strong>two hours </strong>to perform all the tasks in this part of your certificate exam. If you need more time, you are welcome to extend the time of your exam (using the <strong><span style="font-weight: bold; color: rgb(255, 0, 0);">+ function</span> </strong>at the top-right corner of your Exam GUI), but do make sure to include the reasons for such extensions in a text file that must be included in your answer file. Note that only technical issues and delay of the network are acceptable reasons.</li>
+  <li>You must NOT keep a copy of the exam questions nor share the questions with anyone.</li>
+</ul>
+<p style="text-align: justify;"><b>Notes about the Certificate Exam Virtual Environment:</b></p>
+<ul>
+  <li>You will be working on a <em>fresh</em> virtual environment, which is very similar to the virtual lab you used while preparing for the exam. However, you must note that the host and ports to access the RDP service on  your exam virtual machines are different from those you were using in the virtual labs. </li>
+  <li>All the information about your exam virtual machines and how to access them are provided under the &quot;Connection Info&quot; tab, which is visible once you start a new attempt. <strong>If you block outbound ports on your firewall, please ensure to unblock ports indicated on the &quot;Connection Info&quot; tab as soon as you your exam is started. This will result in communication issues with your VMs if you don't open the ports.</strong> Once again, note that the ports for your certificate exam are different from those of your virtual lab and you would need to open the ports for your certificate exam, even if you have already done so for your virtual lab.</li>
+  <li>The exam will finish after two hours, unless you extend your time before two hours is over. So, please plan to be done with all the tasks in less than two hours and in case you need more time, you must extent the time before the exam time over. To extend the time of your exam, you must use the + function provided to you at the top-right corner of your Exam GUI.</li>
+  <li>It may take up to 3 to 10 minutes for your Hands-On Certification Exam to get prepared. So, please be patient. Note that this time is included within the exam time. </li>
+  <li>If for any reason you close the tab/window/browser, you can go back to the test navigating to Kaseya University main page and clicking on the Certificate Test icon.</li>
+  <li>Note that your username and password are indicated under the <em>Data Sheet </em>and <em>Connection Info </em>tabs. Your username is in a format similar to <span style="font-weight: bold; color: rgb(255, 0, 0);"><em>&lt;USERNAME&gt;-ct</em></span> (e.g., <em>johndoe-ct</em>). This means that your username for the exam has an additional portion, &quot;<em>-ct</em>&quot;, which is added at the end of your typical username. The password stays the same as the one you used to login to the portal. Also, please do make sure to use the Kaseya server that is listed under the Connection Info tab, which may or may not be differetn from the one you used for your virtual labs.</li>
+  <li>Your VSA account on Kaseya server will not be created nor activated until you start an attempt. So, please do not try to login to this server before you click on the Attempt (or Re-attempt) quiz button. Also, note that this new account may take up to 5 minutes to be fully provisioned. If after 5 minutes you cannot login to the Kaseya server using the new account, you are more than welcome to use any other Kaseya server that you have access to. Also, you are more than welcome to extend the time of your exam by using the <strong>+ function </strong>available to you at the top-right corner of the Exam GUI for the amount of time that you have waited for your account to be created. You must include a text file in your answer file, explaining the reason why you exteded the time of your exam.</li>
+  <li>Google Chrome is recommended when logging into the IT Scholars environment and connecting to your virtual machines using the webRDP applet. IE is best when interacting with VSA. </li>
+  <li>To access your virtual machines, we use webRDP, which is a Java applet, as the RDP client. For this applet to work propoerly, you would need to make sure that your browser has the latest Java updates.
+    <ul>
+      <li>Sometimes when using webRDP, you may experience that the keyboard and/or mouse do not work. Simply reconnect to resolve the issue (click on the tab).<br />
+      </li>
+      <li>To improve the performance of your RDP sessions, you should get rid of the background wallpaper in the XP machines.<br />
+      </li>
+      <li>For slow connections, you may choose to use 5 instances of mstsc.exe, for example, rather than using webRDP. </li>
+    </ul>
+  </li>
+  <li>Sometime KServer can be buggy or sluggish. In such cases, please find an alternative way to get the job done and leave a note in a text file to explain why you choose the alternative approach. Remember that your time is limited and you cannot wait for too long. For example, if you were explicitly asked to use Domain Watch and/or LAN Watch to deploy an agent to a machine, and KServer was taking too long to perform the Domain or LAN Watch, you could safely choose an alternative approach (e.g., deploy the agent manually), but you would need to leave some notes accompanied by some related screenshots to explain why you chose the alternative approach.</li>
+</ul>
+<strong>Optimizing performance of your VMs over the network in long-haul cases</strong>:
+<ul>
+  <li>Please note that your virtual machines are hosted in Miami, Florida, USA and we have made every effort to optimize the Internet connection so that it is reliable and fast.  However, in long-haul situations the RDP settings may need to be adjusted to minimize latency.  Please follow the instructions below.
+    <ul>
+      <li>Option One:
+        <ul>
+          <li>Once you have started the Cert Test, if you try to connect to any of your virtual machines, the Exam GUI (the test user interface) will provide you with two drop-down boxes located above the webRDP session: <strong><em>resolution </em></strong>and <strong><em>color depth</em></strong><em>.</em>
+            <ul>
+              <li>For the <em>resolution</em>, please select the lowest resolution, namely, 640x480.</li>
+              <li>For the <em>color depth</em>, please select 8.</li>
+            </ul>
+          </li>
+          <li>This should dramatically help with the refresh rate of your RDP connection.</li>
+        <li>Should you still need more time to finish the test, please do feel free to extend the time of your test as much as need be by using the <strong>+ function </strong>available to you at the top-right corner of the Exam GUI. You must include a text file in your answer file, explaining the reason why you exteded the time of your exam.</li></ul>
+      </li>
+      <li>Option Two (use only if Option One is not sufficient):
+        <ul>
+          <li>Designate some local machine to be used instead of the ones in your virtual environment.</li>
+          <li>Include a text file in your answer file that explains what local machines you used instead of dc, ws1, guest1, pc1, and laptop1. </li>
+          <li>Note that you do not have to have exactly five local machines with the exact same OSs and configurations as those in the virtual lab environment. </li>
+          <li>As long as you can show your ability to perform the tasks properly on any similar machine and network, you should be fine.</li>
+          <li>Make sure that no agent is installed on the designated local machines before you start the test.</li>
+          <li>Make sure that there is no important data on these local machines, so that when you perform some tasks on them during the test, your data will not be accidentally deleted, harmed, or compromised.</li>
+          <li>Should you still need more time to finish the test, please do feel free to extend the time of your test as much as need be by using the <strong>+ function </strong>available to you at the top-right corner of the Exam GUI. You must include a text file in your answer file, explaining the reason why you exteded the time of your exam.</li>
+          <li><strong>Disclaimer: </strong>If you use this option, you are responsible for any issues that may raise in your production environment. We do not accept any responsibility and you are 100% responsible to make sure your production environment is not harmed in anyway.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p style="text-align: justify;"><b><strong>Optimizing performance of your Cert Test KServer over the network in long-haul cases</strong>:</b>
+<ul>
+  <li>Please note that your Cert Test KServer is hosted in London, UK and we have made every effort to optimize the Internet connection so that it is reliable and fast.  However, in long-haul situations using the Akamai network may help with the latency.  Please follow the instructions below.
+    <ul>
+      <li>Option One:
+        <ul>
+          <li>Please add &quot;<strong>-cdn</strong>&quot; to the url of your SaaS KServer and see if using the Akamai network would help with the performance of the VSA pages.
+            <ul>
+              <li>For example, if your KServer during the test listed under the Connection Info is <em>university.kaseya.net</em>, use <em>university<strong>-cdn</strong>.kaseya.net </em>instead.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Option Two:
+        <ul>
+          <li>Feel free to use your own local or SaaS KServer instead of the one assigned to you for the test, but you must make sure that during the test you will NOT harm your customer computers. </li>
+          <li><strong>Disclaimer: </strong>If you use this option, you are responsible for any issues that may raise in your production environment. We do not accept any responsibility and you are 100% responsible to make sure your production environment is not harmed in anyway.</li>
+        </ul>
+</li>
+    </ul>
+  </li>
+</ul>
+<p style="text-align: justify;"><strong>Notes for interpreting the questions:</strong>
+<ul>
+  <li>The term &quot;workstations&quot; refers to any computer other than servers. In other words, WS1, WS2, RECEPTION, and LAPTOP-CEO are all referred to as workstations and DC is referred as server.</li>
+  <li>Some configurations on a Cloud VSA server must be unique across the entire shared server. Where this is a requirement, we ask that you include your username as part of the configuration. When you see -&lt;USERNAME&gt; indicated in the lab guide, enter your VSA login name in place of the &lt;USERNAME&gt;. For example, if your VSA login is ajackson and you are requested to create a VSA user named jose-&lt;USERNAME&gt;, you would create the user jose-ajackson.</li>
+  <li>To track your progress and to provide us with your self-assessment, for each question, you can grade your performance as &quot;Fully Completed!&quot;, &quot;Partially Completed!&quot;, and &quot;Not Done!&quot;. You can change your self-assessment grades as many time as you want before the exam is over.</li>
+</ul>
+<p><strong>Notes on how to compose and submit the answer file:</strong></p>
+<ul>
+  <li>To show your work for each one of the questions, you must get one or more screenshots, which must be included in your answer file.</li>
+  <li>Note that it is not enough to include only screenshots that show merely the initiation of a process or activity. In addition to such screenshots, you must also include screenshots that show the outcome of your work and to prove your work was successfully performed. For example, if you are asked to deploy Chrome on WS1, not only you need to include a screenshot that shows your approach, but also you need to include one that shows a Chrome window is displayed on WS1.</li>
+  <li>For reports, in addition to the screenshots that show you have built a report in VSA for as a reponse to the respective questions, you also need to generate the reports in the requested format, download them, and include them in the answer file.</li>
+  <li>In case you experience any issues that would not let you perform the requested task, you must get relevant screenshots that show the issues you have faced.</li>
+  <li>Each screenshot must clearly show the date and time of the corresponding system.</li>
+  <li>Each screenshot must be named using this format: <em>nn-mm.jpg</em>, where <em>nn</em> indicates the question number and <em>mm</em> is a serial number showing the screenshot number for this question. For example, <em>01-01.jpg</em> is the first screenshot taken to show your work for question one and <em>03-02.jpg</em> is the second screenshot taken to show your work for question three.</li>
+  <li>The preferred format of the screenshots is JPG, but other popular formats such as TIFF, GIF, and PNG are acceptable too. Note that the extention of the files must follow their formats. For example, if you choose to save the screenshots as GIF, then the first screenshot for the first question must be named as <em>01-01.gif</em>.</li>
+  <li>The name of the report files must follow the same naming convention as that of screenshots as explained above and the extension must follow its format.</li>
+  <li>Include all the screenshots and report files in one zip file, called the answer file.</li>
+  <li>The answer file name must follow this format: <em>firstname-lastname.zip</em>, where firstname and lastname are your first and last names.</li>
+  <li>The preferred format of the answer file is ZIP, but other popular formats such as 7z, TAR, and GZ are acceptable too. Note that the extention of the answer file must follow its format.</li>
+  <li>Submit your answer file using the &quot;Submit your answer file&quot; button located at the bottom of the certificate hands-on page<a href="mailto:msadjadi@it-scholars.com"></a>.</li>
+  <li>The answer file must be submitted no later than 10 minutes after the question page is closed.</li>
+  <li>Hands-on exams will be graded within 10 business days. Results will be provided via email. If you do not receive your results within 10 business days of submitting your answer file, please open a ticket with Kaseya University at helpdesk.kaseya.com.</li>
+</ul>
+</body>
+</html>

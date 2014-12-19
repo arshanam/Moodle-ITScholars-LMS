@@ -1,0 +1,40 @@
+10
+
+dir
+1129
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/mod/assignment/type
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2014-07-24T15:50:33.406891Z
+1128
+portal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+offline
+dir
+
+online
+dir
+
+upload
+dir
+
+uploadsingle
+dir
+

@@ -1,0 +1,23 @@
+<form id="event-dialog">
+	According to our records, you do not have a pre-scheduled appointment at this time. 
+	<br/> 
+	<br/>
+	We encourage you to use the Scheduler system to pre-schedule your appointments in the future.
+	By doing so, the availability of resources for deploying your virtual environment will be guarateed.
+	If you wish to continue with an on-demand request, please note that your request will be processed in
+	the order that it is received and it may take a while to be processed. 
+	So, please be patient and do not refresh or close this page in the meantime. 
+	<br/> 
+	<br/> 
+	Also, note that only if resources are available and 
+	only if you have enough quota, your request will be processed successfully. 
+	<br/>  
+	<br/>
+	<b>Would you like to send a request for an on-demand appointment for the next 
+	<input type="text" name="hours" id="hours" value="00" class="text ui-widget-content ui-corner-all" maxlength="2" size="2"/> 
+	hours and 
+	<input type="text" name="minutes" id="minutes" value="30" class="text ui-widget-content ui-corner-all" maxlength="2" size="2" /> 
+	minutes? </b>
+	<br/>
+</form>
+

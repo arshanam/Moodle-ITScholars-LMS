@@ -1,0 +1,42 @@
+<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/ezproxy/icon.gif" />&nbsp;<b>EzProxy</b></p>
+
+<div class="indent">
+    <b><h3>Adding an EzProxy remote database article link</h3></b>
+    
+    <p>
+        Important: make sure that the database link you want to add as an EzProxy activity, 
+        is from a database that is actually setup for IBIC Remote Database access! If you are 
+        not sure about this, please contact Wes Edens in the IBIC.
+    </p>
+    
+    <p>
+        <ol>
+            <li>In a separate browser window, find the database article you want to reference.
+            Note that this database needs to be setup for EzProxy, otherwise this will not work! Please contact Wes Edens in the IBIC for more details</li>
+            
+            <li>In your TLE coursepage browser window, in the appropriate section,
+            click the “Turn editing on” button.</li>
+            
+            <li>From the “Add an activity” menu select “EzProxy URL.”</li>
+            <img src="<?php echo $CFG->wwwroot; ?>/mod/ezproxy/lang/en_utf8/help/ezproxy/pix/29ac_ezproxy_activity.png" />
+            
+            <li>A new windows will open titled "Adding a new EzProxy URL"</li>
+            <img src="<?php echo $CFG->wwwroot; ?>/mod/ezproxy/lang/en_utf8/help/ezproxy/pix/29ac_ezproxy_form.png" />
+            
+            <li>Enter a "Name for the link", eg.  "Article from Thunderbird Faculty"</li>
+            
+            <li>Paste in the "Server URL", this is the URL of the database article. You can copy and paste this from your browser while viewing the article. 
+            Please note that you need to use a specially formatted 'persistent or perma link' for several of the databases Thunderbird has available. 
+            (Eg. Ebscohost Business Source Complete) Please contact Wes Edens in the IBIC for additional help.</li>
+            
+            <li>Leave the link as visible, and click "Save and return to course"</li>
+        </ol>
+    </p>
+    
+    
+    <br /><br />
+    <p>
+        Please see <a href="http://help.thunderbird.edu/content/ac11-adding-ezproxy-remote-database-article-links">
+        EzProxy Help</a> for more details.
+    </p>
+</div>

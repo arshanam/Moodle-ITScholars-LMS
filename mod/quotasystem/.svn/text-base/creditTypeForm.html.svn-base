@@ -1,0 +1,48 @@
+<form>
+	<fieldset>
+		<div class="formColumn">
+			<div class="formRow">
+				<label for="name">Name</label>
+				<input type="text" name="name" class="nameCreditType text ui-corner-all" />
+				<br class="clear" />
+			</div>
+			<div class="formRow">
+				<label for="policy">Policy</label>
+				<select name="policy" class="policyCreditType">
+					<option>Loading...</option>
+				</select>
+				<br class="clear" />
+			</div>
+			<div class="formRow">
+				<label for="active">Active</label>
+				<input type="checkbox" name="active" class="activeCreditType" checked="checked" />
+				<br class="clear" />
+			</div>
+		</div>
+		<div class="formColumn">
+			<div class="formRow">
+				<label for="resource">Resource</label>
+				<select name="resource" class="resourceCreditType">
+					<option>Loading...</option>
+				</select>
+				<br class="clear" />
+			</div>
+			<div class="formRow">
+				<label for="course">Course</label>
+				<select name="course" class="courseCreditType">
+					<option>Loading...</option>
+				</select>
+				<br class="clear" />
+			</div>
+			<div class="formRow">
+				<label for="assignable">Assignable</label>
+				<input type="checkbox" name="active" class="assignableCreditType" checked="checked" />
+				<br class="clear" />
+			</div>
+		</div>
+	</fieldset>
+</form>
+<p class="clear" style="text-align: center;">
+	<button class="submit">Save</button>
+	<button class="cancel">Cancel</button>
+</p>

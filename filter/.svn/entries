@@ -1,0 +1,86 @@
+10
+
+dir
+1129
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/filter
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+activitynames
+dir
+
+tex
+dir
+
+emailprotect
+dir
+
+censor
+dir
+
+tidy
+dir
+
+index.html
+file
+
+
+
+
+2010-08-05T14:35:22.000000Z
+68b329da9893e34099c7d8ad5cb9c940
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+multilang
+dir
+
+algebra
+dir
+
+mediaplugin
+dir
+

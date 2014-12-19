@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>QS Reports test</title>
+    
+    <link type="text/css" href="jquery/css/smoothness2/jquery-ui-1.8.5.custom.css" rel="stylesheet" />
+    
+    <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery/jquery-ui-1.8.4.custom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery/flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery/flot/jquery.flot.navigate.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery/flot/jquery.flot.selection.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery/flot/jquery.flot.stack.js"></script>
+    <style>
+		#sortable { list-style-type:none; margin:0; padding:0;  }
+		#sortable li { text-align:left; background-color:white; cursor:pointer; padding:3px;}
+		
+		#placeholder { width:800px; height:300px; float:left; }
+		
+		#panLeft, #panRight { float:left; width:40px; height:255px; background-color:#ddd; position:relative; top:6px; filter:alpha(opacity=10);opacity:0.1;}
+		#panLeft{left:61px;z-index:1000;}
+		#panRight{left:-46px;z-index:1000}
+		
+		#panLeft:hover, #panRight:hover { cursor:pointer; filter:alpha(opacity=90); opacity:0.9;}
+		
+		#sorter { float:left; position:relative; top:6px; left:5px; background-color:#fbf9ee;}
+		#ascDescDiv { background-color:white;}
+		#ascDescDiv p { background-color:white; padding:2px 0px; margin:0;}
+		.nameLabel 
+		{ 
+			width: 200px;
+			transform: rotate(-60deg);
+			-moz-transform: rotate(-60deg);
+			-o-transform: rotate(-60deg);
+			-webkit-transform: rotate(-60deg);
+		}
+	</style>
+ </head>
+    <body>
+    <h1>QS Reports test</h1>
+
+	<div>
+		<div id="panLeft"></div>
+	    <div id="placeholder" ></div>
+		<div id="panRight"></div>
+		<div id="sorter">
+			<ul id="sortable"></ul>
+			<div id="ascDescDiv">
+				<p><input type="radio" name="ascDesc" value="asc"/><span>Ascendant</span></p>
+				<p><input type="radio" name="ascDesc" value="desc"/><span>Descendant</span></p>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	
+   
+
+<script>
+$(function () {
+	function sortData(dataArrays, labels, sortBy, ascDesc)
+	{
+		var numArrays = dataArrays.length;
+		var N = dataArrays[0].length;
+	
+		// bubble sort - not very efficient but ok for short lists
+		for(var j=N-1; j > 0; j--) {
+			for(var i=0; i < j; i++) {
+				if(ascDesc == "desc"){
+					if(dataArrays[sortBy][i][1] < dataArrays[sortBy][i+1][1]){
+						for(var k=0 ; k<numArrays ; k++){
+							var temp = dataArrays[k][i][1];
+							dataArrays[k][i][1] = dataArrays[k][i+1][1];
+							dataArrays[k][i+1][1] = temp;
+						}
+						var temp = labels[i][1];
+						labels[i][1] = labels[i+1][1];
+						labels[i+1][1] = temp;
+					}
+				}else{
+					if(dataArrays[sortBy][i][1] > dataArrays[sortBy][i+1][1]){
+						for(var k=0 ; k<numArrays ; k++){
+							var temp = dataArrays[k][i][1];
+							dataArrays[k][i][1] = dataArrays[k][i+1][1];
+							dataArrays[k][i+1][1] = temp;
+						}
+						var temp = labels[i][1];
+						labels[i][1] = labels[i+1][1];
+						labels[i+1][1] = temp;
+					}
+				}
+				
+			}
+		}
+	}
+	
+	
+	
+    var d1 = [];
+    var d2 = [];
+    var d3 = [];
+    var types = [["Available", d1, "#afd8f8"],["To expire", d2,"#edc240"],["Used", d3, "#cb4b4b"]]
+    
+    
+    for (var i = 0; i <= 20; i++){
+    	var rand1 = parseInt(Math.random() * 30)
+    	var rand2 = parseInt(Math.random() * rand1);
+        d1.push([i, 50-rand1]);
+        d2.push([i, 0+rand2]);
+        d3.push([i, 20+rand1-rand2]);
+    }
+    
+    var data = [types[0][1],types[1][1],types[2][1]];
+    var colors = [types[0][2],types[1][2],types[2][2]];
+    data.reverse();
+    colors.reverse();
+        
+    var labels = [[0.3,"Virtual Labs"],[1.3,"Mentoring Blah"],[2.3,"Certificates Blah"],[3.3,"3"],[4.3,"4"],[5.3,"5"],[6.3,"6"],[7.3,"7"],[8.3,"8"],[9.3,"9"],[10.3,"10"],[11.3,"11"],[12.3,"12"],[13.3,"13"],[14.3,"14"],[15.3,"15"],[16.3,"16"],[17.3,"17"],[18.3,"18"],[19.3,"19"],[20.3,"20"]];
+
+    var options = {
+    	grid:{hoverable:true, clickable: true},
+        series: {
+            stack: 0,
+            lines: { show: false, steps: false },
+            bars: { show: true, barWidth: 0.6 }
+        },
+        xaxis: {
+            ticks: labels,
+        	min: -0.3, max: 24.8, 
+            panRange: [-0.3, 30] 
+        },
+        yaxis: { 
+        	panRange: [0.1, 80]
+        },
+        pan: {
+            interactive: true
+        },
+        colors: colors
+
+    };
+
+    var plot = $.plot($("#placeholder"), data, options);
+    
+    for(i=0 ; i<types.length ; i++){
+    	$("#sortable").append('<li style="border-left: 25px solid '+types[i][2]+'">'+types[i][0]+'</li>');    	
+    }
+
+    $("#placeholder").bind("plotclick", function (event, pos, item) {
+    	plot = $.plot($("#placeholder"), data, options);
+    });
+
+    $("#placeholder").bind("plothover", function (event, pos, item) {
+
+    });
+    
+    $("#placeholder").bind("plotpan", function (event, plot) {
+        var axes = plot.getAxes();
+        var xmin = axes.xaxis.min.toFixed(2)
+        var xmax = axes.xaxis.max.toFixed(2)
+        var ymin = axes.yaxis.min.toFixed(2)
+        var ymax = axes.yaxis.max.toFixed(2)
+        $("#panData").html("Panning to x: "  + xmin
+                           + " &ndash; " + xmax
+                           + " and y: " + ymin
+                           + " &ndash; " + ymax);
+    });
+    
+    // and add panning buttons
+    $("#panLeft").click(function(){
+    	plot.pan({ left: -500 });
+    });
+    $("#panRight").click(function(){
+    	plot.pan({ left: 500 });
+    });
+
+    
+	$("#sortable").sortable();
+	
+	$("#sortable").disableSelection();
+	
+	$( "#sortable" ).bind( "sortstop", function(event, ui) {
+		var order = new Array();
+		$("#sortable li").each(function(index){
+			order[index] = $(this).text();
+		});
+		data = [];
+		colors = [];
+		var k=-1;
+		for (i=0;i<order.length;i++){
+			for(j=0; j<types.length; j++){
+				if(types[j][0] == order[i]){
+					data.push(types[j][1]);
+					colors.push(types[j][2]);
+				}
+			}
+		}
+		
+		var ascDesc = $('#sorter p input[name="ascDesc"]:checked').val();
+		
+		sortData(data, labels, 2, ascDesc);
+		data.reverse();
+
+		colors.reverse();
+		
+		options.colors = colors;
+		plot = $.plot($("#placeholder"), data, options);
+	});
+	
+	$('#sorter p input[name="ascDesc"]').click(function(){
+		sortData(data,labels,0,$(this).val());
+		plot = $.plot($("#placeholder"), data, options);
+	});
+
+});
+</script>
+
+ </body>
+</html>

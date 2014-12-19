@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendarEvents>	
+	<event>
+		<title>available</title>
+		<from>Mon, 17 May 2010 13:00:00 EST</from>
+		<to>Mon, 17 May 2010 14:00:00 EST</to>
+		<allDay>false</allDay>
+		<className>available</className>
+		<actions>
+			<cancel>cancel</cancel>
+		</actions>
+	</event>
+	<event>
+		<title>available</title>
+		<from>Mon, 17 Apr 2010 13:00:00 EST</from>
+		<to></to>
+		<allDay>true</allDay>
+		<className>available</className>
+		<actions>
+			<cancel>cancel</cancel>
+			<edit>edit</edit>
+		</actions>
+	</event>
+	<event>
+		<title>available</title>
+		<from>Tue, 18 May 2010 17:00:00 EST</from>
+		<to>Tue, 18 May 2010 19:00:00 EST</to>
+		<allDay>false</allDay>
+		<className>available</className>
+		<actions>
+			<edit>edit</edit>
+		</actions>
+	</event>
+</calendarEvents>

@@ -1,0 +1,622 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="FAQs_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Masoud Sadjadi</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Masoud Sadjadi</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>119</o:TotalTime>
+  <o:Created>2011-05-12T19:01:00Z</o:Created>
+  <o:LastSaved>2011-05-16T21:41:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1198</o:Words>
+  <o:Characters>6834</o:Characters>
+  <o:Lines>56</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>8392</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>200</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:66000534;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1313613816 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:164248253;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1138386908 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:689796776;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1767443866 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1072049261;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-68402240 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1108507002;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1169598000 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1415273351;
+	mso-list-type:hybrid;
+	mso-list-template-ids:157051916 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:38.65pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+  <h3><strong>Frequently Asked Questions</strong></h3>
+  <p><strong>Q) Who is called a Kaseya Certified Administrator (KCA)?<br />
+  </strong>A Kaseya Certified Administrator (KCA) is an individual who is formally recognized by Kaseya to have a deep level of proficiency in the knowledge and practice of the Kaseya VSA platform. The certificate holder makes the company eligible for immediate Priority Support. </p>
+  <p><strong>Q) What is the Kaseya Certification Program for VSA Core?<br />
+    </strong>A) The certification program for VSA Core includes the core functionality and usage of Kaseya VSA modules including Agent Deployment, Agent Procedures, Audit &amp; Inventory, Info Center, Live Connect, Monitoring, Patch Management, Remote Control, System Setup and Ticketing.<br />
+  </p>
+  <p><strong>Q) What does the Kaseya certificate exam for Core VSA evaluate?<br />
+    </strong>A) The certification exam for Core VSA evaluates both your understanding of the concepts and your readiness as a practitioner in a two-step examination process:<br />
+    Theory:	Multiple choice questions measure competence in Kaseya concepts. Hands-On: Real-world problems measure competence as a practitioner<br />
+    and readiness to assume administrator roles using Kaseya. </p>
+  <p><strong>Q) What score do I need to pass the certification exam?<br />
+  </strong>A) You need a score of 90% or higher to pass the certification exam. Out of the total of 100 points for the certification exam, 30 points are for theory and 70 points are for hands-on. You have unlimited number of attempts for the theory part. Only your highest score will be considered. You can take the theory part as many times until you get the perfect score of 30. Once you secured the 30 point of theory, you only need 60 out of 70 points for the hands-on to be able to pass the exam. Depending on the bundle assigned to you, you may have 1, 2, 4, or 6 attempts for the hands-on part.</p>
+  <p><strong>Q) Do I need to go to a test center to take the certification exam?<br />
+  </strong>A) No, you can take the exam at any time from any where in the world, and it is available 24x7.</p>
+  <p><strong>Q) Is the exam closed book?<br />
+  </strong>A) No, the exam is open book. You are welcome to use any resources at your disposal including Google, Kaseya knowledge base, Kaseya help files, the certification program training materials, etc. However, you must NOT ask another individual to help you with your exam. </p>
+  <p><strong>Q) What if I failed the exam?<br />
+  </strong>A) There is nothing to worry about. You will receive a breakdown of your grade within 24 hours from the time you submit your answers with detailed explanations of your performance during the exam. You can request for more explanations or for a mentoring session to go over all the questions that you may have. </p>
+  <p><strong>Q) Is there a period after failing an exam that I have to wait to take another attempt?<br />
+  </strong>A) No, you can schedule another attempt at anytime, but you need to have quota left in your bundle for retaking the exam. If you do not have any more attempts left in your bundle, you can request to purchase another bundle or just a certification exam.</p>
+  <p><strong>Q) Do I need to attend class sessions in person?<br />
+  </strong>A) No, the whole program is online and you do not need to travel or attend any class meeting in person, nor any Webinars online. You will need to attend a 30-minutes orientation session online on GoToMeeting to make sure that you are completely familiar with the program. </p>
+  <p><strong>Q) When does the program start and end? Do I have to adjust my schedule based on the dates of the program?<br />
+  </strong>A) The program starts as soon as your account is activated in our system and ends when your bundle expires. We will activate your account at the beginning of the orientation session so that your clock starts after you know how to use the program. The program duration for each individual is different and is adjustable to your own schedule. The program can be as short as 1 day (for those who want to simply take the certification exam) and as long as 9 weeks (for beginners).</p>
+  <p><strong>Q) What bundles are available for purchase?<br />
+  </strong>A) Expert, Advanced, Intermediate, and Beginner bundles.</p>
+  <p><strong>Q) What bundle should I select? Which one is designed for me?<br />
+  </strong>A) The right bundle for you depends on your level of expertise. Here are some hints:</p>
+  <ul>
+    <li>If you are completely familiar with <em>all the ten K2 Core VSA modules</em>, then you are an <strong>expert user</strong>.<br />
+    </li>
+    <li>If you are completely familiar with <em>most of the ten K2 Core VSA modules</em>, then you are an <strong>advanced user</strong>.<br />
+    </li>
+    <li>If you are completely familiar with <em>some of the ten K2 Core VSA modules</em>, then you are an <strong>intermediate user</strong>.<br />
+    </li>
+    <li>If you are completely familiar with <em>none of the ten K2 Core VSA modules</em>, then you are a <strong>beginner user</strong>.</li>
+  </ul>
+  <p><strong>Q) What modules are the ten K2 Core VSA Modules?<br />
+  </strong>A) The the K2 Core VSA Modules includes the following (no add-on module is included):</p>
+  <ul>
+    <li>Agent</li>
+    <li>Audit</li>
+    <li>Remote Control</li>
+    <li>Patch Management</li>
+    <li>Monitor</li>
+    <li>Agent Procedure</li>
+    <li>Ticketing</li>
+    <li>Live Connect</li>
+    <li>System</li>
+    <li>Info Center</li>
+  </ul>
+  <p><strong>Q) If I am a beginner user, should I first purchase the beginner bundle, then intermediate, then advanced and finally expert to be able to pass the certification exam?<br />
+  </strong>A) No, you only need to purchase one bundle based on your initial level of expertise. You do not need to go through different levels of expertise.</p>
+  <p><strong>Q) Are the training, review, and preparation materials different in different bundles?<br />
+  </strong>A) Not really! The training, review, and preparation materials are the same no matter what bundle you choose. The only difference is on how long it will take an individual to go through all the material. We believe that for an expert user, one week is sufficient; for an advance user, three week; for an intermediate user, 6 weeks; and for a beginner, 9 weeks.</p>
+  <p><strong>Q) Does the level of difficulty of the certification exam questions differ based on the bundle that I select? For example, if I sign up as a beginner user, would the questions in the certification exam be easer? By the same token, if I sign up as an expert user, should I expect to receive more difficult questions?<br />
+  </strong>A) No, no matter what bundle you choose for your review and preparation, the level of difficulty of the questions in the certification exam would stay the same. The certification exam evaluates your readiness on correctly using the functions offered by the K2 Core VSA Modules. So, whether you started as a beginner, intermediate, advanced, or expert user, the exam is the same exam and if you pass it, you will be awarded a certificate and you will become a Kaseya Certified Adminstrator (KCA) for Core VSA Modules.</p>
+  <p><strong>Q) So, if the training, review, and preparation materials are the same in all four different bundles and the level of difficulty of the questions are also the same, then what is the real difference among these four bundles?<br />
+  </strong>A) The main difference is ]how long it will take an individual to go through all the material. We believe that for an expert user, one week is sufficient; for an advance user, three week; for an intermediate user, 6 weeks; and for a beginner, 9 weeks. With respect to access to resources, the  difference is in the amount of <em>limited-access resources</em> that are pre-sllocated to you. The limited-access resources include mentoring hours, virtual labs practice time, and certification exam attempts.</p>
+  <p><strong>Q) When does the clock start for me? <br />
+  </strong>A) Your clock will start at the beginning of your scheduled 30-minutes orientation session. You can request to postpone the start date or extend your program, if you have to stop the training in the middle of your program to attend to your business, make a travel, etc. However, you would need to notify us of your intention ahead of time.</p>
+  <p><strong>Q) What are the different types of resources that will be pre-allocated for each individual? <br />
+  </strong>A) There are two types of resource: unlimited and limited access. </p>
+  <ul>
+    <li><strong>Unlimited-access resources</strong>: These resources are available to you on a 24x7 basis during the whole period that your bundle is active. These resources include the streaming videos, interactive videos, hands-on documents, book chapters, and self-assessment quizzes. Note that you are not permitted to keep a copy of these resources after you bundle is expired; all such local copies must be destroyed. Also, note that you are not allowed to share these resources with anyone else, not even your colleagues from the same company.<br />
+    </li>
+    <li><strong>Limited-access resources</strong>: These resources are available to you on a limited basis during the period that your bundle is active. These resources include virtual labs, mentoring sessions, and certification exam attempts.</li>
+  </ul>
+  <p><strong>Q) What are the different types of the training, review, and preparation material resources?<br />
+  </strong>A) The different types of the training, review, and preparation resources are:</p>
+  <ul>
+    <li><strong>Streaming videos </strong>(<em>unlimited access</em>): These videos expose you to some of the most important functionalities in each module through some real-world scenarios. <br />
+    </li>
+    <li><strong>Interactive videos</strong> (<em>unlimited access</em>): These videos invite you to play a more active role in your learning process. The videos stop at different points and wait for your input (mouse click, entering username/password, filling out the different forms, creating report, etc.).<br />
+    </li>
+    <li><strong>Hands-on exercises</strong> (<em>unlimited access</em>): These fully illustrated documents provide details of the background scenarios, assumptions, exercises, and step-by-step instructions on how to perform the most important functions in each module.<br />
+    </li>
+    <li><strong>Virtual labs </strong>(<em>limited access</em>): To practice what you have learned in the streaming and interactive videos in a controlled environment, each individual is provided with a virtual environment that include five dedicated virtual machines for in addition to a shared Kaseya server. You can pre-schedule your virtual labs or take advantage of on-demand scheduling. At the time of your appointment, your virtual environment will be ready for you to access it remotely using a user-friendly, Web-based portal.<br />
+    </li>
+    <li><strong>Book chapters</strong> (<em>unlimited access</em>): One book chapter per module has been developed to coverall the detail functions of each module. You can choose to do a quick scan of the book chapter, read it thoroughly, or use it as a reference manual. <br />
+    </li>
+    <li><strong>Self-assessment quizzes </strong>(<em>unlimited access</em>): A repository of many thousands of questions has been developed that contains multiple-choice and true-false questions from the concepts behind the functions in each module of Kaseya. Each time you attempt a quiz, you will be provided with ten random questions to evaluate your understanding of the concepts. <br />
+    </li>
+    <li><strong>Mentoring sessions </strong>(<em>limited access</em>): You can pre-schedule Skype session (or use the on-demand feature) to meet with a mentor and ask your questions. <br />
+    </li>
+    <li><strong>Certification exam attempts </strong>(<em>limited access</em>): You can make an attempt to pass the certification exam. If you were not able to pass the test, you will be provided with detailed feedback on your performance during the test.</li>
+  </ul>
+  <p><strong>Q) What are the amounts of limited-access resources pre-allocated for different bundles?<br />
+  </strong>A) Here is the list of limited-access resources pre-allocated for different bundles:</p>
+  <ul>
+    <li><em><strong>Expert bundle (1 week)<br />
+      </strong></em>10 hours of virtual labs.<br />
+      0.5 hours of mentoring sessions.<br />
+      1 certification exam attempt.</li>
+  </ul>
+  <ul>
+    <li><em><strong>Advanced bundle (3 weeks)<br />
+      </strong></em>30 hours of virtual labs.<br />
+      1.5 hours of mentoring sessions.<br />
+      2 certification exam attempts.</li>
+  </ul>
+  <ul>
+    <li><strong><em>Intermediate bundle (6 weeks)<br />
+      </em></strong>60 hours of virtual labs.<br />
+      3 hours of mentoring sessions.<br />
+      4 certification exam attempts.</li>
+  </ul>
+  <ul>
+    <li><strong><em>Beginner bundle (9 weeks)<br />
+      </em></strong>90 hours of virtual labs.<br />
+      4.5 hours of mentoring sessions.<br />
+      6 certification exam attempts.</li>
+  </ul>
+  <p><strong>Q) Can a bundle be shared? <br />
+  </strong>A) No, each certification bundle is designed to be used only by <em><strong>one individual </strong></em>and it is not supposed to be shared with others. This means that different individuals within the same company would need to have a separate bundle assigned to them. The individuals who attended the program through any of the bundles are entitled to keep a copy of the training materials for their own use and reference, even after their program has expired, but they are responsible to make sure that the downloaded files will not be accessible by others, and especially not by search engines!</p>
+  <p><strong>Q) Who does the certificate belong to? <br />
+  </strong>A) The certificate belongs to the individuals who have successfully passed the exam and the company of their employment can benefit from it as long as that individual is employed by them. So, if the individual with the certificate leaves the company and there is no other certified administrator employed by that company, the company is no longer eligible for priority access to customer service.</p>
+  <p><strong>Q) What is the Kaseya Priority Support? <br />
+  </strong>A) The certificate belongs to the individuals who have successfully passed the exam and the company of their employment can benefit from it as long as that individual is employed by them. So, if the individual with the certificate leaves the company and there is no other certified administrator employed by that company, the company is no longer eligible for priority access to customer service.</p>
+  <p><strong>Q) What is the passing score for the certification exam? What are the different parts of the exam? Is the exam time limited?<br>
+  </strong>The certification exam has 100 points. You need 90 points to pass the exam. The exam is comprised of two parts: Theory and Hands-On. The Theory can be taken as many times as need be while your program has not expired yet and only the highest grade is considered. So, you can take it until you get the perfect score. In each attempt for the Theory part, you will get 30 true/false and multiple-choice questions randomly selected from a repository of many thousands of questions. The questions would be similar to those in the self-assessment quizzes and they will try to evaluate your understanding of the concepts included in all the 10 core modules. The Hands-On part has limited number of attempts, however, depending on what bundle you have chosen. For the expert bundle, you have only one attempt, for the advanced bundle, you have 2, for the intermediate bundle you have 4, and for the beginner bundle you have 6 attempts. Note that these attempts cannot be shared by others. In each attempt of the Hands-On part, you will receive 24 exercises that you would need to perform them within 2 hours in a blank virtual environment similar to the virtual labs that you use to practice with them during your program. For someone who has gone through the program, it should be easy to perform all the tasks within 60 to 75 minutes. However, we account for network delays, technical problems, KServer sluggishness, and granted, you will be asked to take plenty of screenshots. So, two hours seem to be sufficient for this exam.</p>
+  <p></p>
+</div>
+
+</body>
+
+</html>

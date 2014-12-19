@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<link rel='stylesheet' type='text/css' href='fullcalendar/css/jquery.ptTimeSelect.css' />
+<link rel='stylesheet' type='text/css' href='fullcalendar/css/custom-theme/jquery-ui-1.8.1.custom.css' />
+
+
+
+
+<script type='text/javascript' src='fullcalendar/jquery/jquery-1.4.2.min.js'></script>
+<script type='text/javascript' src='fullcalendar/jquery/jquery-ui-1.8.1.custom.min.js'></script>
+<script type='text/javascript' src='fullcalendar/jquery/jquery.ptTimeSelect.js'></script>
+<script type='text/javascript' src='fullcalendar/jquery/jquery.validate.min.js'></script>
+
+
+<script language="javascript">
+
+
+	$(document).ready(function() {
+
+               $("#event-dialog").validate({
+		  rules: {
+		    start_date: {
+		      required: true,
+		      date: true
+		    },
+		    end_date: {
+		      required: true,
+		      date: true
+		    }
+		  }
+		});
+
+
+		$("#edit-event-dialog").dialog({
+			autoOpen: true,
+			height: 500,
+			width: 500,
+			modal: true,
+			buttons: {
+				'Edit Event': function() {
+					$("#event-dialog").submit();
+				},
+				'Cancel': function() {
+					$(this).dialog('close');
+    
+				}
+			},
+			close: function() {
+				allFields.val('').removeClass('ui-state-error');
+			}
+		});
+		
+		//appointment time
+	
+		$("#start_date").datepicker();
+                $("#end_date").datepicker();
+		$('#start').ptTimeSelect(); 
+		$('#end').ptTimeSelect();
+
+
+		//recurrence pattern
+
+		$("#daily").attr('checked', true);
+		$("#daily_container").show();
+		$("#weekly_container").hide();
+		$("#monthly_container").hide();	
+		$("#yearly_container").hide();
+
+
+		$("#daily").click(function () { 
+			$("#daily_container").show("slow");
+			$("#weekly_container").hide();
+			$("#monthly_container").hide();	
+			$("#yearly_container").hide();
+
+ 		});
+		$("#weekly").click(function () { 
+			$("#weekly_container").show("slow");
+			$("#daily_container").hide();
+			$("#monthly_container").hide();	
+			$("#yearly_container").hide();
+ 		});
+		$("#monthly").click(function () { 
+			$("#monthly_container").show("slow");
+			$("#daily_container").hide();
+			$("#weekly_container").hide();
+			$("#yearly_container").hide();
+ 		});
+		$("#yearly").click(function () { 
+			$("#yearly_container").show("slow");
+			$("#daily_container").hide();
+			$("#weekly_container").hide();
+			$("#monthly_container").hide();	
+ 		});
+
+
+		//range of ocurrence
+		
+ 	
+	});
+
+</script>
+<style type="text/css">
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+p { clear: both; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+</style>
+
+
+</head>
+
+<body>
+<div id="dialogboxes">
+   <div id="edit-event-dialog" title="Edit Calendar Event">
+       <form id="event-dialog">
+	<fieldset>
+	<legend>Appointment Time</legend>
+		    <table border="0" cellpadding="5" cellspacing="5">
+		        <tr>
+		            <td><label for="start">Start Time</label></td>
+		            <td><input type="text" name="start" id="start" value="" class="text ui-widget-content ui-corner-all required" /></td>
+		        </tr>
+		        <tr>
+		            <td><label for="end">End Time</label></td>
+		            <td><input type="text" name="end" id="end" value="" class="text ui-widget-content ui-corner-all required" /></td>
+		        </tr>
+		    </table>
+	</fieldset>
+	<fieldset>
+	<legend>Recurrence pattern</legend>
+		<span>
+			<input id="daily" name="recurrence_choice" type="radio" class="field radio" value="daily" />
+			<label class="choice" for="daily" >Daily</label>
+		</span>
+		<span>
+			<input id="weekly" name="recurrence_choice"  type="radio" class="field radio" value="weekly" />
+			<label class="choice" for="weekly" >Weekly</label>
+		</span>
+		<span>
+			<input id="monthly" name="recurrence_choice"  type="radio" class="field radio" value="monthly" />
+			<label class="choice" for="monthly" >Monthly</label>
+		</span>
+		<span>
+			<input id="yearly" name="recurrence_choice"  type="radio" class="field radio" value="yearly" />
+			<label class="choice" for="yearly" >Yearly</label>
+		</span>
+                <hr />
+		<div id="daily_container">
+			<table border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<td>
+					<input id="every_day" name="weekly_choice" type="radio" class="field radio" value="every_day" />
+					<label class="choice" for="every_day" >Every</label>
+		                </td>
+				<td>
+					<input id="every_day" name="every_day" size="3"  class="number ui-widget-content ui-corner-all" />
+		                	<label for="every_day" >day(s)</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="every_week" name="weekly_choice" type="radio" class="field radio" value="every_week" />
+					<label class="choice" for="every_week" >Every week</label>
+				</td>
+				<td></td>
+			</tr>
+		    </table>
+		</div>
+		<div id="monthly_container">
+			<table border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<td>
+					<label for="monthly_day">Day</label>
+					<input id="monthly_day" name="monthly_day" size="3"  class="numbers ui-widget-content ui-corner-all" />
+                                        <label> of every </label> 
+		                </td>
+				<td>
+					<input id="monthly_months" name="monthly_months" size="3"  class="number ui-widget-content ui-corner-all" />					<label for="monthly_months">month(s)</label>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<label >The</label>
+					<select name="yearly week" id="yearly_week" onchange="" size="1">
+					    <option value="first">first</option>
+					    <option value="second">second</option>
+					    <option value="third">third</option>
+					    <option value="fourth">fourth</option>
+					    <option value="last">last</option>
+					</select>
+ 		                </td>
+				<td>	
+					<select name="on_weekdays" id="yearly_weeksyas" onchange="" size="1">
+					    <option value="Sunday">Sunday</option>
+					    <option value="Monday">Monday</option>
+					    <option value="Tuesday">Tuesday</option>
+					    <option value="Wednesday">Wednesday</option>
+					    <option value="Thursday">Thursday</option>
+					    <option value="Friday">Friday</option>
+					    <option value="Saturday">Saturday</option>
+					</select>
+                                        <label> of every </label> 
+					<input id="monthly_months" name="monthly_months" size="3"  class="number ui-widget-content ui-corner-all" />
+					<label for="monthly_months">month(s)</label>
+				</td>
+
+			</tr>
+		    </table>
+		</div>
+		<div id="yearly_container">
+			<table border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<td>
+					<label for="yearly_years">Recur every </label>
+		                </td>
+				<td>
+					<input id="yearly_years" name="yearly_years" size="2"  class="numbers ui-widget-content ui-corner-all" />
+                                        <label> year(s) </label> 
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input id="yearly_on" name="yearly_choice" type="radio" class="field radio" value="yearly_on" />					<label for="yearly_on">On</label>
+					<select name="on_month" id="yearly_month" onchange="" size="1">
+					    <option value="01">January</option>
+					    <option value="02">February</option>
+					    <option value="03">March</option>
+					    <option value="04">April</option>
+					    <option value="05">May</option>
+					    <option value="06">June</option>
+					    <option value="07">July</option>
+					    <option value="08">August</option>
+					    <option value="09">September</option>
+					    <option value="10">October</option>
+					    <option value="11">November</option>
+					    <option value="12">December</option>
+					</select>
+		                </td>
+				<td>
+					<select name="on_day" id="yearly_day" onchange="" size="1">
+					    <option value="01">01</option>
+					    <option value="02">02</option>
+					    <option value="03">03</option>
+					    <option value="04">04</option>
+					    <option value="05">05</option>
+					    <option value="06">06</option>
+					    <option value="07">07</option>
+					    <option value="08">08</option>
+					    <option value="09">09</option>
+					    <option value="10">10</option>
+					    <option value="11">11</option>
+					    <option value="12">12</option>
+					    <option value="13">13</option>
+					    <option value="14">14</option>
+					    <option value="15">15</option>
+					    <option value="16">16</option>
+					    <option value="17">17</option>
+					    <option value="18">18</option>
+					    <option value="19">19</option>
+					    <option value="20">20</option>
+					    <option value="21">21</option>
+					    <option value="22">22</option>
+					    <option value="23">23</option>
+					    <option value="24">24</option>
+					    <option value="25">25</option>
+					    <option value="26">26</option>
+					    <option value="27">27</option>
+					    <option value="28">28</option>
+					    <option value="29">29</option>
+					    <option value="30">30</option>
+					    <option value="31">31</option>
+					</select>
+
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input id="yearly_on_the" name="yearly_choice" type="radio" class="field radio" value="yearly_on_the" />					<label for="yearly_on_the">On the</label>
+					<select name="yearly week" id="yearly_week" onchange="" size="1">
+					    <option value="first">first</option>
+					    <option value="second">second</option>
+					    <option value="third">third</option>
+					    <option value="fourth">fourth</option>
+					    <option value="last">last</option>
+					</select>
+ 		                </td>
+				<td>	
+					<select name="on_weekdays" id="yearly_weeksyas" onchange="" size="1">
+					    <option value="Sunday">Sunday</option>
+					    <option value="Monday">Monday</option>
+					    <option value="Tuesday">Tuesday</option>
+					    <option value="Wednesday">Wednesday</option>
+					    <option value="Thursday">Thursday</option>
+					    <option value="Friday">Friday</option>
+					    <option value="Saturday">Saturday</option>
+					</select>										
+					<label for="on_the_month">of</label>
+					<select name="on_the_month" id="yearly_month" onchange="" size="1">
+					    <option value="01">January</option>
+					    <option value="02">February</option>
+					    <option value="03">March</option>
+					    <option value="04">April</option>
+					    <option value="05">May</option>
+					    <option value="06">June</option>
+					    <option value="07">July</option>
+					    <option value="08">August</option>
+					    <option value="09">September</option>
+					    <option value="10">October</option>
+					    <option value="11">November</option>
+					    <option value="12">December</option>
+					</select>
+		                </td>
+			</tr>
+
+
+		    </table>
+		</div>
+				
+		<div id="weekly_container">
+		    <table border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<td>
+					<label for="weekly_weeks">Recur every </label>
+		                </td>
+				<td>
+					<input id="weekly_weeks" name="weekly_weeks" size="3"  class="numbers ui-widget-content ui-corner-all" />
+                                        <label> week(s) </label> 
+				</td>
+                                <td></td>
+                                <td></td>
+
+			</tr>
+			<tr>
+				<td>
+					<input  id="sunday"  type="checkbox"  name="weekday" value ="sunday" />
+                                        <label for="sunday"> Sunday </label> 
+				</td>
+				<td>
+					<input  id="monday"  type="checkbox" name="weekday" value ="monday" />
+                                        <label for="monday"> Monday </label> 
+				</td>
+				<td>
+					<input  id="tuesday"  type="checkbox" name="weekday" value ="tuesday" />
+                                        <label for="tuesday"> Tuesday </label> 
+				</td>
+				<td>		
+					<input  id="wednesday"  type="checkbox"  name="weekday" value ="wednesday" />
+                                        <label for="wednesday"> Wednesday </label> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input  id="thursday"  type="checkbox" name="weekday" value ="thursday" />
+                                        <label for="thursday"> Thursday </label> 
+				</td>
+				<td>
+					<input  id="friday"  type="checkbox" name="weekday" value ="friday" />
+                                        <labe for="friday"> Friday </label> 
+				</td>
+				<td>
+					<input  id="saturday"  type="checkbox" name="weekday" value ="saturday" />
+                                        <label for="saturday"> Saturday </label> 
+				</td>
+				<td></td>
+
+			</tr>
+		    </table>
+		</div>
+
+
+	</fieldset>
+
+	<fieldset>
+	<legend>Range of ocurrence</legend>
+	    <table border="0" cellpadding="5" cellspacing="5">
+		<tr>
+		    <td><label for="start_date">Start Date</label></td>
+		    <td><input type="text" name="eventDate" id="start_date" class="text ui-widget-content ui-corner-all" /></td>
+	            <td></td>		
+		</tr>
+		<tr>
+			<td>
+				<input id="no_end_date" name="end_date_choice" type="radio" class="field radio" value="no_end_date" />
+				<label class="choice" for="no_end_date" >No end date</label>
+			</td>
+                        <td></td>
+                        <td></td>
+		</tr>
+		<tr>
+			<td>
+				<input id="end_after" name="end_date_choice" type="radio" class="field radio" value="end_after" />
+				<label class="choice" for="end_after" >End after</label>
+			</td>
+                        <td>
+				<input id="ocurrences" name="ocurrences" size="3"  class="numbers ui-widget-content ui-corner-all" />
+                        	<label for="ocurrences" >ocurrences</label>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<input id="end_by" name="end_date_choice" type="radio" class="field radio" value="end_by" >
+				<label class="choice" for="end_by" >End by</label>
+			</td>
+			<td>
+				<input type="text" name="eventDate" id="end_date" class="text ui-widget-content ui-corner-all"  />
+			</td>
+			<td></td>
+		</tr>
+	    </table>
+	</fieldset>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>

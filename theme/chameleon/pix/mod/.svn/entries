@@ -1,0 +1,156 @@
+10
+
+dir
+1129
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/theme/chameleon/pix/mod
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+chat
+dir
+
+label
+dir
+
+scorm
+dir
+
+questionnaire
+dir
+
+resource
+dir
+
+quiz
+dir
+
+forum
+dir
+
+book
+dir
+
+choice
+dir
+
+lams
+dir
+
+survey
+dir
+
+wiki
+dir
+
+glossary
+dir
+
+lesson
+dir
+
+object
+dir
+
+assignment
+dir
+
+data
+dir
+
+journal
+dir
+
+index.html
+file
+
+
+
+
+2010-08-05T14:35:26.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+README.txt
+file
+
+
+
+
+2010-08-05T14:35:26.000000Z
+6ded944d921b36b5fecb8cbb265eb6a1
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1178
+
+workshop
+dir
+
+hotpot
+dir
+

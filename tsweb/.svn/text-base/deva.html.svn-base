@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<div style="text-align:center; width:720px; margin-left:auto; margin-right:auto;">
+<img id="Image-Maps_2201011292150542" src="http://www.image-maps.com/uploaded_files/2201011292150542_fiu-network-diagram.gif" usemap="#Image-Maps_2201011292150542" border="0" width="720" height="540" alt="" />
+<map id="_Image-Maps_2201011292150542" name="Image-Maps_2201011292150542">
+<area shape="rect" coords="522,68,645,183" href="http://kaseya2.cis.fiu.edu/" alt="Kaseya Server" title="Kaseya Server" target="_blank"   />
+<area shape="rect" coords="15,321,78,403" href="xp-1.html" alt="Workstation One in Instruction Lab of SCIS" title="Workstation One in Instruction Lab of SCIS"    />
+<area shape="rect" coords="228,338,312,427" href="dc.html" alt="Domain Controller in Machine Room" title="Domain Controller in Machine Room"    />
+<area shape="rect" coords="464,322,524,403" href="xp-2.html" alt="Guest One in Green Library" title="Guest One in Green Library"    />
+<area shape="rect" coords="646,322,706,403" href="xp-3.html" alt="PC One in CEC" title="PC One in CEC"    />
+<area shape="rect" coords="645,409,705,490" href="xp-4.html" alt="Laptop One in CEC" title="Laptop One in CEC"    />
+<area shape="rect" coords="716,536,718,538" href="http://www.image-maps.com/index.php?aff=mapped_users_2201011292150542" alt="Image Map" title="Image Map" />
+</map>
+<!-- Image map text links - Start - If you do not wish to have text links under your image map, you can move or delete this DIV -->
+<div style="text-align:center; font-size:12px; font-family:verdana; margin-left:auto; margin-right:auto; width:720px;">
+	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="http://kaseya2.cis.fiu.edu/" title="Kaseya Server">Kaseya Server</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="xp-1.html" title="Workstation One in Instruction Lab of SCIS">Workstation One in Instruction Lab of SCIS</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="dc.html" title="Domain Controller in Machine Room">Domain Controller in Machine Room</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="xp-2.html" title="Guest One in Green Library">Guest One in Green Library</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="xp-3.html" title="PC One in CEC">PC One in CEC</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="xp-4.html" title="Laptop One in CEC">Laptop One in CEC</a>
+ | 	<a style="text-decoration:none; color:black; font-size:12px; font-family:verdana;" href="http://www.image-maps.com/index.php?aff=mapped_users_2201011292150542" title="Image Map">Image Map</a>
+</div>
+<!-- Image map text links - End - -->
+
+</div>
+</body>
+
+</html>

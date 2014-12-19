@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendarEvents>	
+	<event>
+		<title>scheduled</title>
+		<from>Sun, 23 Apr 2010 13:00:00 EST</from>
+		<to>Sun, 23 Apr 2010 14:00:00 EST</to>
+		<allDay>false</allDay>
+		<className>scheduled</className>
+		<actions>
+                     <confirm>confirm</confirm>
+		</actions>
+	</event>
+	<event>
+		<title>scheduled</title>
+		<from>Sat, 15 Apr 2010 13:00:00 EST</from>
+		<to></to>
+		<allDay>true</allDay>
+		<className>scheduled</className>
+		<actions>
+                        <confirm>confirm</confirm>
+		</actions>
+	</event>
+	<event>
+		<title>scheduled</title>
+		<from>Tue, 28 Apr 2010 17:00:00 EST</from>
+		<to>Tue, 28 Apr 2010 19:00:00 EST</to>
+		<allDay>false</allDay>
+		<className>scheduled</className>
+		<actions>
+			<confirm>confirm</confirm>
+		</actions>
+	</event>
+</calendarEvents>

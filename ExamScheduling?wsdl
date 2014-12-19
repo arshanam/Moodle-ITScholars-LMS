@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ExamScheduling" targetNamespace="http://skywarp.cs.fiu.edu/vmportal/scheduling" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://skywarp.cs.fiu.edu/vmportal/scheduling" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://skywarp.cs.fiu.edu/vmportal/scheduling">
+      
+      <!-- Request for getAvailableSlots: it contains the start and end dates of the queried period -->
+      <!-- timeZoneId is the endusers time zone ID -->
+      <xsd:element name="AvailableSlotsRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="timeZoneId" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="courseId" type="xsd:integer"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+
+      <!-- List of available slots -->
+      <xsd:element name="AvailableSlotsResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExamSlot" type="tns:ExamSlot"/> 
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+
+      <!-- A exam slot -->
+      <xsd:complexType name="ExamSlot">
+	<xsd:sequence>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+	  <xsd:element maxOccurs="1" minOccurs="0" name="course" type="tns:Course"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="available" type="xsd:boolean"/>
+	  <xsd:element maxOccurs="1" minOccurs="0" name="slotStr" type="xsd:string"/>
+	</xsd:sequence>
+      </xsd:complexType>
+
+
+      <!-- A course definition -->
+      <xsd:complexType name="Course">
+	<xsd:sequence>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:integer"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="name" type="xsd:string"/>
+	  <xsd:element maxOccurs="1" minOccurs="0" name="description" type="xsd:string"/>
+	</xsd:sequence>
+      </xsd:complexType>
+
+
+      <!-- Request to get the number of slots from start to end date. Same arguments as AvailableSlotsRequest -->
+      <!-- timeZoneId is the endusers time zone ID -->
+      <xsd:element name="GetSlotCountRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="timeZoneId" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="courseId" type="xsd:integer"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <!-- Response for number of slots -->
+      <xsd:element name="GetSlotCountResponse">
+	<!-- xsd:attribute name="totalCount" type="xsd:integer" /-->
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="SlotCount" type="tns:SlotCount"/> 
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <xsd:complexType name="SlotCount">
+	<xsd:attribute name="date" type="xsd:dateTime"/>
+	<xsd:attribute name="count" type="xsd:integer"/>
+	<xsd:attribute name="dayStr" type="xsd:string"/>
+      </xsd:complexType>
+
+
+
+      <!-- Information needed to request an exam (id, name, IP, start date and time) -->
+      <!-- timeZoneId is the endusers time zone ID -->
+      <xsd:element name="AllocateExamRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="firstName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="lastName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="email" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="ipAddress" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="country" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="state" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="city" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="companyName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="examTime" type="xsd:dateTime"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="timeZoneId" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="courseId" type="xsd:integer"/>
+	  </xsd:sequence>
+	</xsd:complexType> 
+     </xsd:element>
+
+      <!-- 
+	   Response can be either successful or unsuccessful, in which case it can have an explanation message.
+	   In case the allocation was successful, a password and a examUrl are returned
+      -->
+      <xsd:element name="AllocateExamResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="success" type="xsd:boolean"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="message" type="xsd:string"/>
+	    <!-- xsd:element minOccurs="0" maxOccurs="1" name="password" type="xsd:string" /-->
+	    <xsd:element maxOccurs="1" minOccurs="0" name="examUrl" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="attemptId" type="xsd:integer"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <!-- Grades are requested by passing the user ID -->
+      <xsd:element name="GetGradesRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <!-- The response is a sequence of attempts -->
+      <xsd:element name="GetGradesResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExamAttempt" type="tns:ExamAttempt"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <!-- Each attempt contains the date, time and numeric grade -->
+      <xsd:complexType name="ExamAttempt">
+	<xsd:sequence>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:integer"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="slot" type="tns:ExamSlot"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="grade1" type="xsd:string"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="grade2" type="xsd:string"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="totalGrade" type="xsd:string"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="url" type="xsd:string"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="state" type="tns:AttemptState"/>
+	  <xsd:element maxOccurs="1" minOccurs="1" name="lastUpdate" type="xsd:dateTime"/>	  
+	</xsd:sequence>
+      </xsd:complexType>
+
+
+
+      <!-- Possible attempt states -->
+      <xsd:simpleType name="AttemptState">
+	<xsd:restriction base="xsd:string">
+	  <xsd:enumeration value="SCHEDULED"/> <!-- The exam has been assigned, but it hasn't been taken yet -->
+	  <xsd:enumeration value="TAKEN"/> <!-- The exam has been taken, but no grade2 has been assigned yet -->
+	  <xsd:enumeration value="COMPLETED"/> <!-- The exam has been taken -->
+	  <xsd:enumeration value="CANCELLED"/> <!-- The exam has been cancelled before taking it -->
+
+	</xsd:restriction>
+      </xsd:simpleType>
+
+
+      <xsd:element name="GetAvailableTimeZoneIdsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="timeZoneId" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="SetUserDefaultTimeZoneIdRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="email" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="timeZoneId" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="SetUserDefaultTimeZoneIdResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="success" type="xsd:boolean"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="message" type="xsd:string"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="GetUserDefaultTimeZoneIdRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="email" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="GetUserDefaultTimeZoneIdResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="timeZoneId" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="GetScheduledExamsRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="email" type="xsd:string"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      
+      <!-- The same structure as in AvailableSlotsResponse -->
+      <xsd:element name="GetScheduledExamsResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExamAttempt" type="tns:ExamAttempt"/> 
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+
+      <xsd:element name="CancelExamRequest">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="userName" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="email" type="xsd:string"/>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="attemptId" type="xsd:integer"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="CancelExamResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="1" minOccurs="1" name="success" type="xsd:boolean"/>
+	    <xsd:element maxOccurs="1" minOccurs="0" name="message" type="xsd:string"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetCoursesResponse">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element maxOccurs="unbounded" minOccurs="0" name="course" type="tns:Course"/>
+	  </xsd:sequence>
+	</xsd:complexType>
+      </xsd:element>
+	
+
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CancelExamResponseMsg">
+    <wsdl:part name="parameters" element="tns:CancelExamResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AvailableSlotsResponseMsg">
+    <wsdl:part name="parameters" element="tns:AvailableSlotsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AllocateExamResponseMsg">
+    <wsdl:part name="parameters" element="tns:AllocateExamResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetScheduledExamsRequestMsg">
+    <wsdl:part name="parameters" element="tns:GetScheduledExamsRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AllocateExamRequestMsg">
+    <wsdl:part name="parameters" element="tns:AllocateExamRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGradesRequestMsg">
+    <wsdl:part name="parameters" element="tns:GetGradesRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSlotCountResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetSlotCountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SetUserDefaultTimeZoneIdResponseMsg">
+    <wsdl:part name="parameters" element="tns:SetUserDefaultTimeZoneIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCoursesResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetCoursesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAvailableTimeZoneIdsResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetAvailableTimeZoneIdsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetUserDefaultTimeZoneIdResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetUserDefaultTimeZoneIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AvailableSlotsRequestMsg">
+    <wsdl:part name="parameters" element="tns:AvailableSlotsRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SetUserDefaultTimeZoneIdRequestMsg">
+    <wsdl:part name="parameters" element="tns:SetUserDefaultTimeZoneIdRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetScheduledExamsResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetScheduledExamsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetUserDefaultTimeZoneIdRequestMsg">
+    <wsdl:part name="parameters" element="tns:GetUserDefaultTimeZoneIdRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSlotCountRequestMsg">
+    <wsdl:part name="parameters" element="tns:GetSlotCountRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CancelExamRequestMsg">
+    <wsdl:part name="parameters" element="tns:CancelExamRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGradesResponseMsg">
+    <wsdl:part name="parameters" element="tns:GetGradesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCoursesRequestMsg">
+  </wsdl:message>
+  <wsdl:message name="GetAvailableTimeZoneIdsRequestMsg">
+  </wsdl:message>
+  <wsdl:portType name="ExamScheduling">
+    <wsdl:operation name="getSlotCount">
+      <wsdl:input name="GetSlotCountRequest" message="tns:GetSlotCountRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetSlotCountResponse" message="tns:GetSlotCountResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableSlots">
+      <wsdl:input name="AvailableSlotsRequest" message="tns:AvailableSlotsRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="AvailableSlotsResponse" message="tns:AvailableSlotsResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="allocateExam">
+      <wsdl:input name="AllocateExamRequest" message="tns:AllocateExamRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="AllocateExamResponse" message="tns:AllocateExamResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGrades">
+      <wsdl:input name="GetGradesRequest" message="tns:GetGradesRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetGradesResponse" message="tns:GetGradesResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableTimeZoneIds">
+      <wsdl:input name="GetAvailableTimeZoneIdsRequest" message="tns:GetAvailableTimeZoneIdsRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetAvailableTimeZoneIdsResponse" message="tns:GetAvailableTimeZoneIdsResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserDefaultTimeZoneId">
+      <wsdl:input name="SetUserDefaultTimeZoneIdRequest" message="tns:SetUserDefaultTimeZoneIdRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="SetUserDefaultTimeZoneIdResponse" message="tns:SetUserDefaultTimeZoneIdResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDefaultTimeZoneId">
+      <wsdl:input name="GetUserDefaultTimeZoneIdRequest" message="tns:GetUserDefaultTimeZoneIdRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetUserDefaultTimeZoneIdResponse" message="tns:GetUserDefaultTimeZoneIdResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getScheduledExams">
+      <wsdl:input name="GetScheduledExamsRequest" message="tns:GetScheduledExamsRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetScheduledExamsResponse" message="tns:GetScheduledExamsResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelExam">
+      <wsdl:input name="CancelExamRequest" message="tns:CancelExamRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="CancelExamResponse" message="tns:CancelExamResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCourses">
+      <wsdl:input name="GetCoursesRequest" message="tns:GetCoursesRequestMsg">
+    </wsdl:input>
+      <wsdl:output name="GetCoursesResponse" message="tns:GetCoursesResponseMsg">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExamSchedulingBinding" type="tns:ExamScheduling">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSlotCount">
+      <soap:operation soapAction="getSlotCount"/>
+      <wsdl:input name="GetSlotCountRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSlotCountResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableSlots">
+      <soap:operation soapAction="getAvailableSlots"/>
+      <wsdl:input name="AvailableSlotsRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="AvailableSlotsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="allocateExam">
+      <soap:operation soapAction="allocateExam"/>
+      <wsdl:input name="AllocateExamRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="AllocateExamResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGrades">
+      <soap:operation soapAction="getGrades"/>
+      <wsdl:input name="GetGradesRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetGradesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableTimeZoneIds">
+      <soap:operation soapAction="getAvailableTimeZoneIds"/>
+      <wsdl:input name="GetAvailableTimeZoneIdsRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetAvailableTimeZoneIdsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserDefaultTimeZoneId">
+      <soap:operation soapAction="setUserDefaultTimeZoneId"/>
+      <wsdl:input name="SetUserDefaultTimeZoneIdRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SetUserDefaultTimeZoneIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDefaultTimeZoneId">
+      <soap:operation soapAction="getUserDefaultTimeZoneId"/>
+      <wsdl:input name="GetUserDefaultTimeZoneIdRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetUserDefaultTimeZoneIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getScheduledExams">
+      <soap:operation soapAction="getScheduledExams"/>
+      <wsdl:input name="GetScheduledExamsRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetScheduledExamsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelExam">
+      <soap:operation soapAction="cancelExam"/>
+      <wsdl:input name="CancelExamRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CancelExamResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCourses">
+      <soap:operation soapAction="getCourses"/>
+      <wsdl:input name="GetCoursesRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCoursesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExamScheduling">
+    <wsdl:port name="ExamSchedulingPort" binding="tns:ExamSchedulingBinding">
+      <soap:address location="http://131.94.130.126:8888/axis2/services/ExamScheduling/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

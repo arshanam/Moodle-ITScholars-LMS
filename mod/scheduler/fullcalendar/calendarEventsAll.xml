@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendar>	
+	<appointment>
+		<appointmentId>246</appointmentId>
+		<resourceType>Virtual Lab</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Sun, 23 May 2010 13:00:00 EST</start>
+		<end>Mon, 24 May 2010 14:00:00 EST</end>
+		<type>scheduled</type>
+		<actions>
+					 <edit>edit</edit>
+					 <cancel>cancel</cancel>
+		</actions>
+	</appointment>
+	<appointment>
+		<appointmentId>834</appointmentId>
+		<resourceType>Mentoring</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Sun, 23 May 2010 13:00:00 EST</start>
+		<end>Sun, 23 May 2010 15:00:00 EST</end>
+		<type>scheduled</type>
+		<actions>
+					<edit>edit</edit>
+					<cancel>cancel</cancel>
+					<info>jmerr003</info>
+		</actions>
+	</appointment>
+	<appointment>
+		<appointmentId>834</appointmentId>
+		<resourceType>Mentoring</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Sun, 30 May 2010 13:00:00 EST</start>
+		<end>Sun, 30 May 2010 15:00:00 EST</end>
+		<type>scheduled</type>
+		<actions>
+					<edit>edit</edit>
+					<cancel>cancel</cancel>
+					<info>jmerr003</info>
+		</actions>
+	</appointment>
+	<appointment>
+		<appointmentId>834</appointmentId>
+		<resourceType>Mentoring</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Sun, 6 June 2010 13:00:00 EST</start>
+		<end>Sun, 6 June 2010 15:00:00 EST</end>
+		<type>scheduled</type>
+		<actions>
+					<edit>edit</edit>
+					<cancel>cancel</cancel>
+					<info>jmerr003</info>
+		</actions>
+	</appointment>
+	<appointment>
+		<appointmentId>258</appointmentId>
+		<resourceType>Certificate</resourceType>
+                <course>Kaseya 2</course> 
+		<start>Fri, 4 June 2010 17:00:00 EST</start>
+		<end>Fri, 4 June 2010 19:00:00 EST</end>
+		<type>scheduled</type>
+		<actions>
+					<edit>edit</edit>
+					<cancel>cancel</cancel>
+		</actions>
+	</appointment>
+        <appointment>
+		<resourceType>Mentoring</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Mon, 17 May 2010 13:00:00 EST</start>
+		<end>Mon, 17 May 2010 14:00:00 EST</end>
+		<type>available</type>
+		<actions>
+					<confirm>confirm</confirm>
+					<edit>edit</edit>
+					<info>David V.</info>
+					
+		</actions>
+	</appointment>
+	<appointment>
+		<resourceType>Certificate</resourceType>
+                <course>Kaseya 2</course> 
+		<start>Mon, 24 May 2010 13:00:00 EST</start>
+                <end>Mon, 24 May 2010 15:00:00 EST</end>
+		<end></end>
+		<type>available</type>
+		<actions>
+					<confirm>confirm</confirm>
+					<edit>edit</edit>
+		</actions>
+	</appointment>
+	<appointment>
+		<resourceType>Virtual Lab</resourceType>
+                <course>Kaseya 1</course> 
+		<start>Tue, 18 May 2010 17:00:00 EST</start>
+		<end>Tue, 18 May 2010 19:00:00 EST</end>
+		<type>available</type>
+		<actions>
+					<confirm>confirm</confirm>
+					<edit>edit</edit>
+		</actions>
+	</appointment>
+</calendar>

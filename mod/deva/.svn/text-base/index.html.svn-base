@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	alert("Hello!");
+});
+</script>
+
+  <style>
+  p { color:green; font-weight:bolder; margin:3px 0 0 10px; }
+  div { color:blue; margin-left:20px; font-size:14px; }
+  span { color:red; }
+  </style>
+  <!-- script src="http://code.jquery.com/jquery-1.4.4.js"></script -->
+</head>
+  <!-- p>Browser info:</p -->
+<!-- script>
+	var userAgent = navigator.userAgent.toLowerCase();
+	$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+	var version = 0;
+    var height = 106;
+    
+	// Is this a version of IE?
+	if($.browser.msie){
+		alert("IE");
+	}
+
+	// Is this a version of Chrome?
+	if($.browser.chrome){
+		height = 100;
+		alert("Chrome");
+	}
+
+	// Is this a version of Safari?
+	if($.browser.safari){
+		alert("Safari");
+	}
+
+	// Is this a version of Mozilla?
+	if($.browser.mozilla){
+		alert("Mozilla");
+	}
+
+	// Is this a version of Opera?
+	if($.browser.opera){
+		alert("Opera");
+	}
+	</script -->
+    
+	<FRAMESET id="frameSetId" border="0" frameSpacing="0" rows="106,*" frameborder="0">
+		<FRAME name="navigationbar" src="deva-tabs.php?id=293" frameBorder="0"  scrolling="no" target="mainscreen">
+		<FRAME name="mainscreen" src="devaGraph.html" frameBorder="0">
+	</FRAMESET>
+
+    
+</html>

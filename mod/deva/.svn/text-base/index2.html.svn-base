@@ -1,0 +1,11 @@
+<html>
+<body>
+<IFRAME name="mainscreen" SRC="http://localhost:8888/moodle19/mod/deva/devaGraph.php?kaseyaServer=http://kaseya2.cis.fiu.edu/&vmName0=Domain%20Controller%20(dc)&vmName1=Workstation%201%20(ws1)&vmName2=Guest%201%20(guest1)&vmName3=PC%201%20(pc1)&vmName4=Laptop%201%20(laptop1)&hostName=serval.cis.fiu.edu&hostPort0=10001&hostPort1=10002&hostPort2=10003&hostPort3=10004&hostPort4=10005&username=Administrator&password=k4se*prt4l&domain=FIU&bottomFrameHeightPercentage=97" WIDTH=450 HEIGHT=100>
+If you can see this, your browser doesn't 
+understand IFRAME.  However, we'll still 
+<A HREF="hello.html">link</A> 
+you to the file.
+</IFRAME>
+<a href="http://google.com/" target="mainscreen">Google</a>
+</body>
+</html>

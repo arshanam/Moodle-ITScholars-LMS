@@ -1,0 +1,101 @@
+<form>
+	<fieldset>
+		<div class="formColumn">
+			<div class="formRow">
+				<label for="name">Name</label>
+				<input type="text" name="namePolicy" class="namePolicy text ui-corner-all" />
+			</div>
+
+			<div class="quotaInPeriodPolicySpan formRow">
+				<label for="quotaInPeriodPolicy" class="clear">Quota in period</label>
+				<input type="text" name="quotaInPeriodPolicy" class="quotaInPeriodPolicy text ui-corner-all" />
+			</div>
+
+			<div class="minQuotaPolicySpan formRow">
+				<label for="minQuota" class="clear">Min quota per period</label>
+				<input type="text" name="minQuotaPolicy" class="minQuotaPolicy text ui-corner-all" />
+			</div>
+
+			<div class="maxQuotaPolicySpan formRow">
+				<label for="maxQuota" class="clear">Max quota per period</label>
+				<input type="text" name="maxQuotaPolicy" class="maxQuotaPolicy text ui-corner-all" />
+			</div>
+
+			<div class="activePolicySpan formRow">
+				<label for="active" class="clear">Active</label>
+				<input type="checkbox" name="activePolicy" class="activePolicy" checked="checked"/>
+			</div>
+
+			<div class="assignablePolicySpan formRow">
+				<label for="assignable" class="clear">Assignable</label>
+				<input type="checkbox" name="assignablePolicy" class="assignablePolicy" checked="checked"/>
+			</div>
+
+		</div>
+
+		<div class="formColumn">
+			<div class="formRow">
+				<label for="type">Type</label>
+				<select name="typePolicy" class="typePolicy" >
+					<option value="NOEXPIRATION" selected="selected">No Expiration</option>
+					<option value="FIXED">Fixed</option>
+					<option value="GRADUAL">Gradual</option>
+					<option value="MINMAX">Min-Max</option>
+				</select>
+			</div>
+
+			<div class="absRelPolicySpan twoRadio formRow" >
+				<input type="radio" name="absRelPolicy" class="absPolicy" value="absPolicy" />
+				<label for="absRel">Absolute</label>
+				<input type="radio" name="absRelPolicy" class="relPolicy" value="relPolicy" checked="checked"/>
+				<label for="absRel">Relative</label>
+			</div>
+
+			<div class="startDatePolicySpan formRow">
+				<label for="startDate" class="clear">Start date</label>
+				<input type="text" name="startDatePolicy" class="startDatePolicy text ui-corner-all" />
+			</div>
+			
+			<div class="startTimePolicySpan formRow">
+				<label for="startTime" class="clear">Start time</label>
+				<input type="text" name="startTimePolicy" class="startTimePolicy text ui-corner-all" />
+			</div>
+
+			<div class="noDaysToStartPolicySpan formRow">
+				<label for="noDaysToStart" class="clear">No. days to start</label>
+				<input type="text" name="noDaysToStartPolicy" class="noDaysToStartPolicy text ui-corner-all" />
+			</div>
+
+			<div class="expDatePolicySpan formRow">
+				<label for="expDate" class="clear">Exp. date</label>
+				<input type="text" name="expDatePolicy" class="expDatePolicy text ui-corner-all" />
+			</div>
+
+			<div class="noPeriodsPolicySpan formRow">
+				<label for="noPeriods" class="clear">No. of periods</label>
+				<input type="text" name="noPeriodsPolicy" class="noPeriodsPolicy text ui-corner-all" />
+			</div>
+
+			<div class="noDaysPolicySpan formRow">
+				<label for="noDays" class="clear">No. of days</label>
+				<input type="text" name="noDaysPolicy" class="noDaysPolicy text ui-corner-all" />
+			</div>
+
+			<div class="noDaysPeriodPolicySpan formRow">
+				<label for="noDaysPeriod" class="clear">No. days per period</label>
+				<input type="text" name="noDaysPeriodPolicy" class="noDaysPeriodPolicy text ui-corner-all" />
+			</div>
+
+		</div>
+		<div class="formNoColumn">
+			<div>
+				<label for="description">Description</label>
+				<textarea name="descriptionPolicy" class="descriptionPolicy"></textarea>
+			</div>
+		</div>
+	</fieldset>
+</form>
+<p class="clear" style="text-align:center;">
+	<button class="submit">Save</button>
+	<button class="cancel">Cancel</button>
+</p>

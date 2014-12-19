@@ -1,0 +1,38 @@
+<form id="create-dialog">
+    <input type="hidden" name="eventid" id="eventid" value="" />
+    <table border="0" cellpadding="5" cellspacing="5">
+        
+        <tr>
+            <td><label for="startDate">Start Date:</label></td>
+            <td colspan="2"><input type="text" name="startDate" id="startDate" class="text ui-widget-content ui-corner-all" tabindex="1" /></td>
+        </tr>
+        <tr>
+            <td><label for="start">Start Time:</label></td>
+            <td><input type="text" name="start" id="start" value="" class="text ui-widget-content ui-corner-all" tabindex="2" /></td>
+            <td>Start Now <input type="checkbox" name="startNow" class="checkbox" id="startNow" /></td>
+        </tr>
+        <tr>
+            <td><label for="endDate">End Date:</label></td>
+            <td colspan="2"><input type="text" name="endDate" id="endDate" class="text ui-widget-content ui-corner-all" tabindex="3" /></td>
+        </tr>
+        <tr>
+            <td><label for="end">End Time:</label></td>
+            <td colspan="2"><input type="text" name="end" id="end" value="" class="text ui-widget-content ui-corner-all" tabindex="4" /><span id="nextday"></span></td>
+        </tr>
+        <tr>
+            <td><label for="type">Event Type:</label></td>
+            <td colspan="2">
+                <select name="type" id="type" style="width:200px;" tabindex="5">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label id='customddm' for="course"></label>:</td>
+            <td colspan="2">
+                <select name="course" id="course" style="width:200px;" tabindex="6">
+                </select>
+            </td>
+        </tr>
+    </table>
+</form>
+

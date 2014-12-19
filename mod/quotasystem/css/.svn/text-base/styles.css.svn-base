@@ -1,0 +1,168 @@
+
+#wrapper {
+	background: #fff;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+
+#wrapper h1 {
+	margin: 0.5em 1em;
+}
+
+#wrapper div.container{
+    position: relative;
+	top: 10px;
+    margin-bottom:40px;
+    margin-right: 40px;
+    margin-left: 20px;
+	min-height: 350px;
+	min-width: 700px;
+}
+
+#tabs{
+font-size:0.95em;
+margin:0;
+padding:0;
+}
+
+#tabs p {
+margin:0.3em 0;
+padding:0;
+}
+
+/*Forms*/
+
+form {margin:0;padding:0;} /* Standard margin and padding reset, normally done on the body */
+
+legend {
+	color:#000; /* IE styles legends with blue text by default */
+	margin-left:-7px; /* A hack that only ie reads to position the legend in the same place cross browser */
+}
+fieldset {
+	border:1px solid #dedede; /* Default fieldset borders vary cross browser, so make them the same */
+}
+fieldset div {
+	overflow:hidden; /* Contain the floating elements */
+	display:inline-block; /* Give layout in ie to contain float */
+}
+fieldset div {display:block;} /* Reset element back to block leaving layout in ie */
+
+
+
+.radio {
+	position:relative; /* Position so children are relative to this container */
+	border:0; /* Remove the border */
+}
+.radio span {
+	position:absolute; /* Take the content of the legend out of flow */
+	top:0;left:0; /* and position it to the top left of the fieldset */
+	width:5em; /* Same width as labels */
+}
+.radio ul {
+	margin-left:5em; /* Since the legend is out of flow. set margin, so inputs are inline */
+	list-style:none; /* Dont want bullets */
+}
+.radio li {
+	position:relative; /* Fix a bug in IE zoom functionality */
+	display:inline; /* Display the inputs in a line */
+	white-space:nowrap; /* We dont want a label to wrap between the input and label */
+}
+.radio label, .radio input {
+	width:auto; /* Reset the width on the label from the 5em, set earlier */
+	float:none; /* Reset the float from left on the label, set earlier */
+	vertical-align:middle; /* Align the radio buttons with the inputs */
+}
+
+.clear{
+    clear: both;
+}
+
+
+form fieldset div label, form fieldset div input , form fieldset div select{ font-size: 0.95em; display:block; float:left;}
+form fieldset div input{ margin-bottom: -0.2em; width:12em;}
+form fieldset div input[type="checkbox"], form fieldset div input[type="radio"]{ width:1em;}
+form fieldset div label{ margin-top: 5px; width:10em; height: 2em;}
+form fieldset div select{ font-size: 0.9em; width:13em;}
+form fieldset .twoRadio label{width: 8.5em; margin-left: 0.4em;}
+form fieldset div.formColumn{float:left; width:22em; margin:1.5em 0em 0em 2.5em}
+form fieldset div.formNoColumn{clear:both; width:46em; margin:0em 0em 0em 2.5em}
+div.formNoColumn textarea{width:43em; height: 3em;}
+.pageTitle{font-size:1.5em;font-weight:bold;}
+.tableTop{margin: 0.2em 0 0.2em 0; line-height:2em}
+.tableTop label{clear:both;}
+.select{margin: 0.2em 0 0.2em 0; line-height:38px}
+.addButton{position:absolute;right:0;top:0;margin:0;padding:0;}
+.addButton .ui-button{margin:0;padding:0;}
+
+table.display tbody tr.even{background-color:#fff}
+table.display tbody tr.odd{background-color:#e0effc}
+
+table.display tbody tr.even:hover{cursor:pointer;background-color:#c5dbec}
+table.display tbody tr.odd:hover{cursor:pointer;background-color:#c5dbec}
+table.display tbody tr.even:hover td.sorting_1{cursor:pointer;background-color:#c5dbec}
+table.display tbody tr.odd:hover td.sorting_1{cursor:pointer;background-color:#c5dbec}
+
+table.display tbody tr.even td.sorting_1{background-color:#e0effc}
+table.display tbody tr.odd td.sorting_1{background-color:#c5dbec}
+table.display tbody tr td.details {background-color:#D1CFD0;border:2px solid #A19B9E;}
+
+.columnDetails{float:left; width:15em;margin-left:4em}
+.columnDetails p{margin:0.3em 0;}
+.buttonColumnDetails{float:right;width:6em;margin-left:4em}
+.descriptionDetails{clear:left;width:36em;margin-left:4em}
+
+div.addForm{margin:0em 0em 1em 0em}
+fieldset { padding:0; border:0; }
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+.ui-widget {
+    font-family:Lucida Grande,Lucida Sans,Arial,sans-serif;
+    font-size:0.8em;
+}
+
+#creditsTab .container, #policiesTab .container{
+	width: 780px;
+}
+.formRow{
+	width: 22em;
+	height: 2.6em;
+	margin: 0 0 0 0;
+	text-align: left;
+}
+
+.twoRadio input{
+	margin: 0.5em 0 0 0.15em;
+}
+
+
+
+.message{
+	text-align: center;
+}
+
+.message .image img{
+	margin: 10px 0 10px 0;
+}
+
+.loading .image{
+	padding: 0;
+	margin: 0;
+}
+
+#tabs .message p{
+	margin: -10px 0 10px 0;
+	padding: 0;
+	color: #555;
+	font-size: 0.8em;
+}
+
+
+#tabs .message .error{
+	color: #cd0a0a;
+}
+
+
+

@@ -1,0 +1,226 @@
+10
+
+dir
+1129
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/blocks
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+mnet_hosts
+dir
+
+moodleblock.class.php
+file
+
+
+
+
+2010-08-05T14:35:28.000000Z
+eb2bd9c55a7e20d202a66cb9d1096669
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29568
+
+db
+dir
+
+tag_youtube
+dir
+
+course_list
+dir
+
+site_main_menu
+dir
+
+social_activities
+dir
+
+tags
+dir
+
+glossary_random
+dir
+
+section_links
+dir
+
+html
+dir
+
+search
+dir
+
+rss_client
+dir
+
+messages
+dir
+
+login
+dir
+
+quiz_results
+dir
+
+calendar_upcoming
+dir
+
+version.php
+file
+
+
+
+
+2010-08-05T14:35:28.000000Z
+07a6c992109be58bf2483a59aaa24016
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+394
+
+news_items
+dir
+
+activity_modules
+dir
+
+admin
+dir
+
+recent_activity
+dir
+
+admin_bookmarks
+dir
+
+mentees
+dir
+
+search_forums
+dir
+
+blog_tags
+dir
+
+participants
+dir
+
+online_users
+dir
+
+tag_flickr
+dir
+
+blog_menu
+dir
+
+admin_tree
+dir
+
+index.html
+file
+
+
+
+
+2010-08-05T14:35:28.000000Z
+d784fa8b6d98d27699781bd9a7cf19f0
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+loancalc
+dir
+
+course_summary
+dir
+
+calendar_month
+dir
+

@@ -1,0 +1,232 @@
+<?php //$Id: usecolormanager.php
+
+require_once(dirname(dirname(dirname(dirname(__FILE__)))).'/config.php');
+require_once($CFG->libdir .'/ddllib.php');
+
+//require_once('parser.php');
+//require_once('xmlserializer/serialize.php');
+//require_once('xmlserializer/classes.php');
+
+//require_once($CFG->libdir .'/ddllib.php');
+//require_once($CFG->libdir .'/dmllib.php');
+//require_once(dirname(__FILE__).'');
+
+//require_once($CFG->dirroot .'/lib/ddllib.php');	// needed to create XMLDBTable()
+//require_once($CFG->dirroot .'/lib/dmllib.php');
+
+//echo $CFG->libdir;
+		
+
+if (isset($_POST['action'])){
+	$action = $_POST['action'];   
+}
+//else{
+//	$action = "";
+//}
+
+<<<<<<< .mine
+=======
+//echo "usecolormanager: ".$action;
+>>>>>>> .r15
+
+//echo "usecolormanager ";
+
+//************************************************************************************************
+ 
+if ($action=='insertEventColor'){
+	header('Content-Type: text/x-json');
+
+	if (isset($_POST['code'])){
+			$code = $_POST['code']; 
+			$status = $_POST['status']; 
+	}else{
+		$action = "";
+	}
+		
+	try {
+		
+		$id = insertEventColor($code, $status);
+		
+		if($id > 0){
+			$result = true;
+		}else{
+			$result = false;
+		}
+		
+		$arr = array ('id'=>$id,'code'=>$code,'status'=>$status,'result'=>$result);
+	
+		echo json_encode($arr);
+
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+	
+
+}else if ($action=='updateEventColor'){
+	header('Content-Type: text/x-json');
+
+	if (isset($_POST['id'])){
+			$id = $_POST['id'];
+			$code = $_POST['code']; 
+			$status = $_POST['status']; 
+	}else{
+		$action = "";
+	}
+		
+	try {
+		
+		$result = updateEventColor($id, $code, $status);
+		$arr = array ('id'=>$id,'code'=>$code,'status'=>$status,'result'=>$result);
+		
+		echo json_encode($arr);
+		//echo array('result'=>$result);
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+		
+}else if ($action=='deleteEventColor'){
+	header('Content-Type: text/x-json');
+
+	if (isset($_POST['id'])){
+			$id = $_POST['id']; 
+	}else{
+		$action = "";
+	}
+	
+	try {
+		
+		$result = deleteEventColor($id);
+		$arr = array ('id'=>$id,'result'=>$result);
+
+		echo json_encode($arr);
+
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+}else if ($action=='getAvailColors'){
+	header('Content-Type: text/x-json');
+
+	try {
+		
+		$arr = array ('result'=>getAvailColors());
+
+		echo json_encode($arr);
+
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+
+}else if ($action=='countAvailColors'){
+	header('Content-Type: text/x-json');
+
+	try {
+		
+		$arr = array ('result'=>countAvailColors());
+		//$arr = array ('result'=>1);
+
+		echo json_encode($arr);
+
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+}else if ($action=='countAllColors'){
+	header('Content-Type: text/x-json');
+
+	try {
+		
+		$arr = array ('result'=>countAllColors());
+
+		echo json_encode($arr);
+
+		
+	} catch (Exception $e) {
+	
+		echo $e->getMessage();
+	
+	}
+}
+   
+//************************************************************************************************
+
+function getAvailColors(){
+	$stack = array();
+	$colors = get_records('scheduler_colormap','enabled',1); 
+	foreach ($colors as $color)
+	{
+		array_push($stack, $color->colorcode);		
+	}
+	$color_str = implode(",", $stack);
+	
+	return $color_str;
+}
+
+function countAvailColors(){
+	return count_records('scheduler_colormap','enabled',1); 
+}
+function countAllColors(){
+	return count_records('scheduler_colormap'); 
+}
+
+function colorExists($code){
+	$cnt = count_records('scheduler_colormap','colorcode', $code);
+	$result = false;
+	if($cnt > 0){
+		$result = true;
+	}
+	return $result;
+}
+
+function insertEventColor($code, $status){
+
+	if(!colorExists($code)){
+		if($status == "enabled"){
+			$flag = 1;
+		}else{
+			$flag = 0;
+		}
+			
+		return insert_record('scheduler_colormap',array(
+						'colorcode'=>$code,
+						'enabled'=>$flag ));
+	}else{
+		return false;
+	}
+}
+
+// returns a true | false value for the success of the update
+function updateEventColor($id, $code, $status){
+
+	if($status == "enabled"){
+		$flag = 1;
+	}else{
+		$flag = 0;
+	}
+	
+	return update_record('scheduler_colormap',array(
+					'id'=>$id,
+					'colorcode'=>$code,
+					'enabled'=>$flag ));
+}
+
+// returns a true | false value for the success of the delete
+function deleteEventColor($id){
+	return delete_records('scheduler_colormap', 'id', $id);
+}
+
+
+?>

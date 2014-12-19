@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ############################################################################################################  -->
+<!-- ############################################################################################################  -->
+<!-- ############################################################################################################  -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################  -->
+  <question type="description">
+    <name><text>
+Background
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+<p><b>BACKGROUND <o:p></o:p></b></p>
+ <p style="text-align: justify;">You have been hired as the lead IT Administrator at the Florida International University (FIU) to manage the computers at the School of Computing and Information Sciences (SCIS), the Machine Room (MR), the Green Library (GL), and the College of Engineering and Computing (CEC). As shown in Fig. 1, SCIS, MR, GL, and CEC are physically located in four buildings. SCIS maintains about 200 desktop workstations in its instructional lab, MR maintains about 5 servers, GL maintains about 50 open access guest desktops, and CEC maintains about 500 PCs and laptops. The exact number and configurations of computers are not well documented. Typically, the servers run Windows 2003 and the desktop workstations, PCs, and laptops all run Windows XP. Active Directory is implemented in one of the servers, named dc, and is assigned to all computers in SCIS and GL, but not to those in CEC. As the lead IT Administrator of the organization you are responsible for ensuring that all systems run efficiently with minimal disruption of computing services to the users.<span> You have decided to use Kaseya to manage all computers at SCIS, MR, GL, and CEC. You have an tenant account at a Kaseya SaaS server; it is now configured for now and is fully operational.<br /></span></p>
+<p style="text-align: justify;"><br /><span></span></p>
+ <p style="text-align: center;"><span><img vspace="0" hspace="0" border="0" src="http://users.cis.fiu.edu/~sadjadi/Teaching/IT%20Automation/KAS201/FIU-Network-Diagram.png" alt="FIU Network Diagram" title="FIU Network Diagram" /><br /></span></p>
+<p align="center" style="text-align: center;"><b>Fig. 1: A logical diagram of FIU's network.<o:p></o:p></b></p>
+ <p style="text-align: justify;"><!--EndFragment--></p>
+ <p style="text-align: justify;">Lately many users complained that the services requested were not completed on time or they never received a response from the IT support staff. Therefore, you decided to organize the IT support requests at FIU. To address this concern, you would like to put a system in place to track the service requests from when a ticket is created to the time is it resolved and completed. You have decided to use Kaseya Service Desk (KSD) to accomplish these tasks. <br />
+</p>
+    ]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+    <defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+</question>
+
+<!-- ############################################################################################################ -->
+  <question type="description">
+    <name><text>
+Important Notes
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+<p><b>IMPORTANT NOTES <o:p></o:p></b></p>
+ <p style="text-align: justify;">
+ 
+ <b>Notes for interpreting the questions:</b> 
+ <ul>
+   <li>The term "workstations" refers to any computer other than servers. In other words, ws1, guest1, pc1, and laptop1 are all referred to as workstations and dc is referred as server. </li></ul></em>
+ 
+ <b>Notes on how to compose and submit the answer file:</b> 
+ <ul>
+   <li>To show your work for each one of the questions, you must get one or more screenshots, which must be included in your answer file.</li>
+   <li>Note that it is not enough to include only screenshots that show merely the initiation of a process or activity. In addition to such screenshots, you must also include  screenshots that show the outcome of your work and to prove your work was successfully performed. </li>  
+   <li>For reports, in addition to the screenshots that show you have built a report in VSA for as a reponse to the respective questions, you also need to generate the reports in the requested format, download them, and include them in the answer file.</li>
+   <li>In case you experience any issues that would not let you perform the requested task, you must get relevant screenshots that show the issues you have faced.</li>
+   <li>Each screenshot must clearly show the date and time of the corresponding system.</li>
+   <li>Each screenshot must be named using this format: <i>nn-mm.jpg</i>, where <i>nn</i> indicates the question number and <i>mm</i> is a serial number showing the screenshot number for this question. For example, <i>01-01.jpg</i> is the first screenshot taken to show your work for question one and <i>03-02.jpg</i> is the second screenshot taken to show your work for question three.</li>
+   <li>The preferred format of the screenshots is JPG, but other popular formats such as TIFF, GIF, and PNG are acceptable too. Note that the extention of the files must follow their formats. For example, if you choose to save the screenshots as GIF, then the first screenshot for the first question must be named as <i>01-01.gif</i>.</li>
+   <li>The name of the report files must follow the same naming convention as that of screenshots as explained above and the extension must follow its format.</li>
+   <li>The name of the report files must follow the same naming convention as that of screenshots as explained above and the extension must follow its format.</li>
+   <li>Include all the screenshots and report files in one zip file, called the answer file, and submit this file using the link below the question page or the one on the course main page included in the Certificate Test category.</li>
+   <li>The answer file name must follow this format: <i>firstname-lastname.zip</i>, where firstname and lastname are your first and last names.</li>
+   <li>The preferred format of the answer file is ZIP, but other popular formats such as 7z, TAR, and GZ are acceptable too. Note that the extention of the answer file must follow its format.</li>
+   <li>The answer file must be submitted no later than 10 minutes after the question page is closed.</li>
+   <li>Upload the zip file using the <em>Certification Exam Hands-On: Submit Answers</em> link shortly after you are done with your test.</li></ul></em>
+</p>
+    ]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+    <defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+</question>
+
+<!-- ############################################################################################################ -->
+  <question type="description">
+    <name><text>
+Submit
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Please submit your answers in one zip file, called the answer file, which includes all the screenshots showing your work, using the <em>Certification Test Submit Answers </em>link. If for any reason, you pressed on the submit button below this page or this page is closed because you ran out of time, you can still submit your answers.
+    ]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+    <defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+</question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD/Service Desk Definition
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="description">
+    <name><text>
+Service Desk Definition
+    </text></name>
+    <questiontext format="moodle_auto_format"><text><![CDATA[<font size="5"><span style="font-weight: bold;">
+SERVICE DESK DEFINITION:
+    </span></font> <font size="2"><span style="font-style: italic;"><br />
+Tip: Estimated time required to finish this part is 40 minutes; The marks for this part are 33.33% or 23.33 points out of 70.
+    </span></font>]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+	<defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD/Service Desk Definition/Licenses
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Licenses-1
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Check your licenses for service desks and users and make sure that there are sufficient number of licenses available.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the licenses for service desks and users.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+A screenshot from System > Server Management > License Manager > Licenses page and one from System > Server Management > License Manager > Role Types page.
+    ]]></text></generalfeedback><defaultgrade>2</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Licenses-2
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Check your licenses for service desks and make sure that there are sufficient number of licenses available.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the licenses for service desks.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+A screenshot from System > Server Management > License Manager > Licenses page.
+    ]]></text></generalfeedback><defaultgrade>2</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Licenses-3
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Check your licenses for service desk users and make sure that there are sufficient number of licenses available.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the licenses for service desk users.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+A screenshot from System > Server Management > License Manager > Role Types page.
+    ]]></text></generalfeedback><defaultgrade>2</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD/Service Desk Definition/Template
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Template-1
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Create a service desk using the ITIL Incident template, name it &lt;USERNAME&gt;_SD, and select Fixed Width Tabbed as its default editing template. You are free to type/choose appropriate entries for the remaining parameters.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the new desk was created according to the given instructions.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+See the hint for what must be included in the answer file.
+    ]]></text></generalfeedback><defaultgrade>4</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Template-2
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Create a service desk using the Blank Ticket template, name it &lt;USERNAME&gt;_SD, and select Default Ticket Entry as its default editing template. You are free to type/choose appropriate entries for the remaining parameters.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the new desk was created according to the given instructions.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+See the hint for what must be included in the answer file.
+    ]]></text></generalfeedback><defaultgrade>4</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Template-3
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Create a service desk using the Service_Desk_Standard template, name it &lt;USERNAME&gt;_SD, and select Fixed Width Without Tabs as its default editing template. You are free to type/choose appropriate entries for the remaining parameters.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the new desk was created according to the given instructions.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+See the hint for what must be included in the answer file.
+    ]]></text></generalfeedback><defaultgrade>4</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Template-4
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Create a service desk using the Customer_SD_Basic template and select Customer_Service_Fixed_Width_Tabbed as its default editing template. You are free to type/choose appropriate entries for the remaining parameters.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the new desk was created according to the given instructions.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+See the hint for what must be included in the answer file.
+    ]]></text></generalfeedback><defaultgrade>4</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+  <question type="multichoice">
+    <name><text>
+KSD-Template-5
+    </text></name><questiontext format="moodle_auto_format"><text><![CDATA[
+Create a service desk using the Customer_SD_Automation template and select Customer_Service_Fixed_Width_No_Tabs as its default editing template. You are free to type/choose appropriate entries for the remaining parameters.
+ 
+<em>What must be included in the answer file?
+<ul><li>One or more screenshots that show the new desk was created according to the given instructions.</li>
+</ul></em>
+ 
+Self Assessment:
+    ]]></text></questiontext><image></image><generalfeedback><text><![CDATA[
+See the hint for what must be included in the answer file.
+    ]]></text></generalfeedback><defaultgrade>4</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+	<shuffleanswers>0</shuffleanswers><single>true</single><shuffleanswers>false</shuffleanswers>
+    <correctfeedback><text></text></correctfeedback><partiallycorrectfeedback><text></text></partiallycorrectfeedback>
+    <incorrectfeedback><text></text></incorrectfeedback><answernumbering>none</answernumbering><answer fraction="100">
+    <text>Fully Completed!</text><feedback><text></text></feedback></answer><answer fraction="50">
+	<text>Partially Completed!</text><feedback><text></text></feedback></answer><answer fraction="0">
+    <text>Not Done!</text><feedback><text></text></feedback></answer>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD/Service Desk Users
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="description">
+    <name><text>
+Service Desk Users
+    </text></name>
+    <questiontext format="moodle_auto_format"><text><![CDATA[<font size="5"><span style="font-weight: bold;">
+SERVICE DESK USERS:
+    </span></font> <font size="2"><span style="font-style: italic;"><br />
+Tip: Estimated time required to finish this part is 40 minutes; The marks for this part are 33.33% or 23.33 points out of 70.
+    </span></font>]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+	<defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="category">
+    <category><text>
+$course$/Certificate Test - KSD/Service Desk Automation
+    </text></category>
+  </question>
+
+<!-- ############################################################################################################ -->
+<!-- ############################################################################################################ -->
+  <question type="description">
+    <name><text>
+Service Desk Automation
+    </text></name>
+    <questiontext format="moodle_auto_format"><text><![CDATA[<font size="5"><span style="font-weight: bold;">
+SERVICE DESK AUTOMATION:
+    </span></font> <font size="2"><span style="font-style: italic;"><br />
+Tip: Estimated time required to finish this part is 40 minutes; The marks for this part are 33.33% or 23.33 points out of 70.
+    </span></font>]]></text></questiontext><image></image><generalfeedback><text></text></generalfeedback>
+	<defaultgrade>0</defaultgrade><penalty>0</penalty><hidden>0</hidden><shuffleanswers>0</shuffleanswers>
+  </question>
+
+
+
+</quiz>

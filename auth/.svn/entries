@@ -1,0 +1,141 @@
+10
+
+dir
+1129
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/auth
+svn+ssh://portal@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2011-07-29T03:08:11.465694Z
+891
+sadjadi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+nntp
+dir
+
+ldap
+dir
+
+pop3
+dir
+
+shibboleth
+dir
+
+db
+dir
+
+imap
+dir
+
+email
+dir
+
+radius
+dir
+
+fc
+dir
+
+none
+dir
+
+mnet
+dir
+
+nologin
+dir
+
+cas
+dir
+
+index.html
+file
+
+
+
+
+2010-08-05T14:35:10.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+README.txt
+file
+
+
+
+
+2010-08-05T14:35:10.000000Z
+0a8a5eb4ba2074d46e19b571726819a0
+2010-07-16T15:40:48.548016Z
+1
+dvill013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5584
+
+manual
+dir
+
+pam
+dir
+
