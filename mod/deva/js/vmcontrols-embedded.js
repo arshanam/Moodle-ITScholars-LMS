@@ -1603,6 +1603,7 @@ function modifyAppointment(mins,addmins){
 	}
 	
 	// alert("mins: " + mins);
+	success = false;
 	
 	$.ajax({
 		type: 'POST',
