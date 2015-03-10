@@ -923,7 +923,9 @@ function scheduleAppointment(event, username) {
                 if(!data.id){
                     isScheduled = false;
                     //noticeDialog("Schedule Certificate Exam", data.availabilityStatus, "alert");
-					noticeDialogWithRedirect("Schedule Certificate Exam", data.availabilityStatus, "alert", $("#courseURL").val());
+					//hotfix-MisleadingMsg-SchCertExam
+					// noticeDialogWithRedirect("Schedule Certificate Exam", data.availabilityStatus, "alert", $("#courseURL").val());
+					noticeDialogWithRedirect("Schedule request was rejected!", "You have an ongoing certificate exam. <br/>You must first finish your exam before being able to schedule your virtual lab.", "alert", $("#courseURL").val());
 					
                 }else{
                     isScheduled = true;
