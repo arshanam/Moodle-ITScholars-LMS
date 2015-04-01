@@ -3,3 +3,5 @@ config.php
 .project
 .settings/
 .svn/
+moodle-dev
+.gitignore
